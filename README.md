@@ -11,6 +11,10 @@
 - Choose classes you attend and then view the weekly schedule for the lectures
 - Interactive map of the university with directions and info for the buildings
 
+
+
+
+
 ## Folder Structure
 ```
 .
@@ -36,3 +40,9 @@
 |-LICENSE                       # The Project's License.
 |-README.md --> This File.
 ```
+
+
+
+## Disclaimer
+
+Nomnomr was created as a University Project. As such, it is not a fully functional software product and it's not meant for commercial use. The main objective of the Project is to simulate software development workflows and not to produce a functional product.
