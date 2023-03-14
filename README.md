@@ -45,4 +45,4 @@
 
 ## Disclaimer
 
-Nomnomr was created as a University Project. As such, it is not a fully functional software product and it's not meant for commercial use. The main objective of the Project is to simulate software development workflows and not to produce a functional product.
+Papapp was created as a University Project. As such, it is not a fully functional software product and it's not meant for commercial use. The main objective of the Project is to simulate software development workflows and not to produce a functional product.
