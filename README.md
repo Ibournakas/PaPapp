@@ -25,7 +25,6 @@
 |  |  |--Ion
 |  |  |--Malvina
 |  |  |--Stavroula
-|  |  |--Stavroula
 |  |  |--Vaggelis
 |  |  
 |  |--final                     # Final Files Submitted On Each Phase.
