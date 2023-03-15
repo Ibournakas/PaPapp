@@ -6,7 +6,7 @@
 
 # Features
 
-- See announcements and news for the University.   
+- See announcements and news about the University.   
 - See today's or this week's menu of the cafeteria.
 - Choose the classes you attend and then view the weekly schedule for the lectures.
 - Interactive map of the university with directions and info for the buildings.
