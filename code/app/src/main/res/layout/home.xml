@@ -49,18 +49,17 @@
         android:scaleType="fitEnd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.172"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.256"
-        app:srcCompat="@drawable/food"
-        />
+        app:layout_constraintVertical_bias="0.249"
+        app:srcCompat="@drawable/food" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="113dp"
         android:layout_height="46dp"
-        android:layout_marginStart="40dp"
+        android:layout_marginStart="84dp"
         android:text="@string/menu"
         android:textAlignment="center"
         android:textColor="@color/logo2"
@@ -69,7 +68,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.285" />
+        app:layout_constraintVertical_bias="0.284" />
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -80,10 +79,10 @@
         android:scaleType="fitStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintHorizontal_bias="0.073"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.45"
+        app:layout_constraintVertical_bias="0.487"
         app:srcCompat="@drawable/bus" />
 
     <TextView
@@ -97,10 +96,130 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.308"
+        app:layout_constraintHorizontal_bias="0.293"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.448" />
+        app:layout_constraintVertical_bias="0.484" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="193dp"
+        android:layout_height="95dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/thirdshape"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.485"
+        app:srcCompat="@drawable/library2" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="78dp"
+        android:layout_height="40dp"
+        android:text="@string/library"
+        android:textColor="@color/bez"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.717"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.474" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="180dp"
+        android:layout_height="97dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/fourthshape"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.698"
+        app:srcCompat="@drawable/map_2" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="67dp"
+        android:layout_height="40dp"
+        android:text="@string/maps"
+        android:textColor="@color/blue1"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="193dp"
+        android:layout_height="95dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/fifthshape"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.696"
+        app:srcCompat="@drawable/board" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="81dp"
+        android:layout_height="31dp"
+        android:fontFamily="sans-serif-condensed-light"
+        android:text="@string/courses"
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.665" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="323dp"
+        android:layout_height="83dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/sixthshape"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.881"
+        app:srcCompat="@drawable/bell" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="168dp"
+        android:layout_height="52dp"
+        android:text="@string/announcements"
+        android:textColor="@color/logo"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.863" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

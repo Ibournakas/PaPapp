@@ -8,5 +8,9 @@
     <string name="username1">Name Surname</string>
     <string name="menu">Cafeteria Menu</string>
     <string name="bus">Public Transport</string>
+    <string name="library">Library</string>
+    <string name="maps">Maps</string>
+    <string name="courses">Courses</string>
+    <string name="announcements">Announcements and Events</string>
 
 </resources>
