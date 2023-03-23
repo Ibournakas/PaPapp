@@ -12,5 +12,10 @@
     <string name="maps">Maps</string>
     <string name="courses">Courses</string>
     <string name="announcements">Announcements and Events</string>
+    <string name="settings">Settings/Preferences</string>
+    <string name="sound">Sound</string>
+    <string name="language">Language</string>
+    <string name="dark">Dark Mode</string>
+    <string name="logout">Logout</string>
 
 </resources>

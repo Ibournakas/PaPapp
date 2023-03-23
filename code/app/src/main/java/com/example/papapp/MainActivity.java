@@ -66,6 +66,7 @@ public class MainActivity extends AppCompatActivity {
                     // Start main activity
                     Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                     startActivity(intent);
+                    finish();
                 } else {
                     // Login failed
                     Toast.makeText(MainActivity.this, "Invalid email or password", Toast.LENGTH_SHORT).show();
@@ -73,5 +74,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
 }
 
