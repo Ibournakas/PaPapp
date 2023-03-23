@@ -40,7 +40,14 @@
 |-README.md --> This File.
 ```
 
+## Execution Instructions
 
+To see and run the program you need to download the latest Android Studio version (https://developer.android.com/studio). Make sure your system supports it.
+
+- When the installation is completed, download an emulator from the Device Manager (we are using Pixel 3 Api 31).  
+- Clone the repository (https://github.com/Ibournakas/PaPapp.git), then go to File -> Open and go to where you cloned the repo.    
+- Click on "code" file and when you click "Ok" our project will open on a new window.
+- Finally, you can click play to test our app!
 
 ## Disclaimer
 
