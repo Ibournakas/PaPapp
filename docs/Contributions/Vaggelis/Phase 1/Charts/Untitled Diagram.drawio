@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-03-26T18:34:58.259Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="XuvCejiZe-BhtJ0vMG_L" version="21.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2023-03-26T18:40:49.966Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36" etag="3Yc17TqBCpazPlazamTn" version="21.1.1" type="github">
   <diagram name="domain model v0.1" id="929967ad-93f9-6ef4-fab6-5d389245f69c">
-    <mxGraphModel dx="1434" dy="2513" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="827" pageHeight="583" background="none" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="2456" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="827" pageHeight="583" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" style=";html=1;" />
         <mxCell id="1" style=";html=1;" parent="0" />
@@ -37,7 +37,7 @@
           <mxGeometry x="545" y="-1387" width="160" height="84" as="geometry" />
         </mxCell>
         <mxCell id="7_-KOmJF56WA2YFmEBqw-10" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/font&gt;" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#8e0b32;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;strokeColor=#9673a6;" parent="1" vertex="1">
-          <mxGeometry x="855" y="-1707" width="160" height="84" as="geometry" />
+          <mxGeometry x="1030" y="-1721" width="160" height="84" as="geometry" />
         </mxCell>
         <mxCell id="7_-KOmJF56WA2YFmEBqw-11" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Cafeteria&lt;/b&gt;&lt;/font&gt;" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#8e0b32;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;strokeColor=#9673a6;" parent="1" vertex="1">
           <mxGeometry x="344.94" y="-1517" width="160" height="84" as="geometry">
@@ -275,7 +275,10 @@
             <mxPoint x="955" y="-1537" as="targetPoint" />
             <Array as="points">
               <mxPoint x="835" y="-1587" />
-              <mxPoint x="935" y="-1587" />
+              <mxPoint x="930" y="-1587" />
+              <mxPoint x="930" y="-1610" />
+              <mxPoint x="990" y="-1610" />
+              <mxPoint x="1110" y="-1610" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -358,6 +361,17 @@
               <mxPoint x="720" y="-1170" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="IVOW1CMZrd3Iir7cURom-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="IVOW1CMZrd3Iir7cURom-6" target="7_-KOmJF56WA2YFmEBqw-1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="920" y="-1610" />
+              <mxPoint x="795" y="-1610" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="IVOW1CMZrd3Iir7cURom-6" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Login&lt;/b&gt;&lt;/font&gt;" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#8e0b32;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="840" y="-1731" width="160" height="84" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
