@@ -3,12 +3,15 @@ package com.example.papapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.text.TextUtils;
 import android.view.KeyEvent;
 import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -20,6 +23,10 @@ public class MainActivity extends AppCompatActivity {
     private EditText mPasswordEditText;
     private Button mLoginButton;
 
+    private CheckBox mRememberMeCheckbox;
+
+    private SharedPreferences sharedPreferences;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,6 +36,28 @@ public class MainActivity extends AppCompatActivity {
         mEmailEditText = findViewById(R.id.editText1);
         mPasswordEditText = findViewById(R.id.editText2);
         mLoginButton = findViewById(R.id.button);
+        mRememberMeCheckbox = findViewById(R.id.rememberMeCheckbox);
+
+        sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        // Create a shared preferences instance
+        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+
+
+
+//        boolean rememberMe = sharedPreferences.getBoolean("rememberMe", false);
+//
+//        if (rememberMe && sharedPreferences.getBoolean("loggedIn", false)) {
+//            String email = sharedPreferences.getString("email", "");
+//            String password = sharedPreferences.getString("password", "");
+//
+//            mEmailEditText.setText(email);
+//            mPasswordEditText.setText(password);
+//
+//            // Login automatically
+//            Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+//            startActivity(intent);
+//            finish();
+//        }
 
         mPasswordEditText.setOnKeyListener(new View.OnKeyListener() {
             @Override
@@ -63,6 +92,24 @@ public class MainActivity extends AppCompatActivity {
                 if (email.equals("admin") && password.equals("admin")) {
                     // Login successful
                     Toast.makeText(MainActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
+                    // Check if remember me checkbox is checked
+                    boolean rememberMe = mRememberMeCheckbox.isChecked();
+                    boolean loggedIn =true;
+
+                    SharedPreferences.Editor editor = getSharedPreferences("myPrefs", MODE_PRIVATE).edit();
+                    editor.putString("email", email);
+                    editor.putString("password", password);
+                    editor.putBoolean("rememberMe", rememberMe);
+                    editor.putBoolean("loggedIn", loggedIn);
+                    editor.apply();
+
+
+
+//                            Toast.makeText(MainActivity.this, Boolean.toString(loggedIn), Toast.LENGTH_SHORT).show();
+
+
+
+
                     // Start main activity
                     Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                     startActivity(intent);
