@@ -17,5 +17,11 @@
     <string name="language">Language</string>
     <string name="dark">Dark Mode</string>
     <string name="logout">Logout</string>
+    <string name="remember">Remember Me</string>
+    <string-array name="languages">
+            <item>English</item>
+            <item>Greek</item>
+        </string-array>
+
 
 </resources>
