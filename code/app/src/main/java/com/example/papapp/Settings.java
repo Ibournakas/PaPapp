@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -17,6 +18,7 @@ import java.util.Arrays;
 
 public class Settings extends AppCompatActivity {
     private String originalLanguage="English";
+    private SharedPreferences sharedPreferences;
     private Boolean languageChanged = false;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -54,9 +56,12 @@ public class Settings extends AppCompatActivity {
         });
 
         Button logout = findViewById(R.id.button2);
+        sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
         logout.setOnClickListener(view -> {
                 // Clear any user authentication data (e.g. session, token, etc.)
-
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.clear();
+                editor.apply();
                 // Navigate back to the login screen
                 Intent intent = new Intent(Settings.this, MainActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);

@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
@@ -42,22 +43,22 @@ public class MainActivity extends AppCompatActivity {
         // Create a shared preferences instance
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
 
-
-
+//        if(sharedPreferences.getBoolean("rememberMe",true))
+//            Toast.makeText(MainActivity.this, sharedPreferences.getString("email", ""), Toast.LENGTH_SHORT).show();
 //        boolean rememberMe = sharedPreferences.getBoolean("rememberMe", false);
 //
-//        if (rememberMe && sharedPreferences.getBoolean("loggedIn", false)) {
-//            String email = sharedPreferences.getString("email", "");
-//            String password = sharedPreferences.getString("password", "");
-//
-//            mEmailEditText.setText(email);
-//            mPasswordEditText.setText(password);
-//
-//            // Login automatically
-//            Intent intent = new Intent(MainActivity.this, HomeActivity.class);
-//            startActivity(intent);
-//            finish();
-//        }
+        if (sharedPreferences.getBoolean("rememberMe",true) && sharedPreferences.getBoolean("loggedIn", false)) {
+            String email = sharedPreferences.getString("email", "");
+            String password = sharedPreferences.getString("password", "");
+
+            mEmailEditText.setText(email);
+            mPasswordEditText.setText(password);
+
+            // Login automatically
+            Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+            startActivity(intent);
+            finish();
+        }
 
         mPasswordEditText.setOnKeyListener(new View.OnKeyListener() {
             @Override
@@ -73,6 +74,7 @@ public class MainActivity extends AppCompatActivity {
         mLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                SharedPreferences sharedPreferences = getSharedPreferences("myPrefs", MODE_PRIVATE);
                 // Get user input
                 String email = mEmailEditText.getText().toString().trim();
                 String password = mPasswordEditText.getText().toString().trim();
@@ -96,19 +98,14 @@ public class MainActivity extends AppCompatActivity {
                     boolean rememberMe = mRememberMeCheckbox.isChecked();
                     boolean loggedIn =true;
 
-                    SharedPreferences.Editor editor = getSharedPreferences("myPrefs", MODE_PRIVATE).edit();
+                    SharedPreferences.Editor editor = getSharedPreferences("MyPrefs", MODE_PRIVATE).edit();
                     editor.putString("email", email);
                     editor.putString("password", password);
                     editor.putBoolean("rememberMe", rememberMe);
                     editor.putBoolean("loggedIn", loggedIn);
                     editor.apply();
 
-
-
-//                            Toast.makeText(MainActivity.this, Boolean.toString(loggedIn), Toast.LENGTH_SHORT).show();
-
-
-
+                    //Toast.makeText(MainActivity.this, sharedPreferences.getString("email", ""), Toast.LENGTH_SHORT).show();
 
                     // Start main activity
                     Intent intent = new Intent(MainActivity.this, HomeActivity.class);
