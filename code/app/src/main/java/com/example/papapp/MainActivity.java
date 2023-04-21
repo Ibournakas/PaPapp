@@ -38,15 +38,10 @@ public class MainActivity extends AppCompatActivity {
         mPasswordEditText = findViewById(R.id.editText2);
         mLoginButton = findViewById(R.id.button);
         mRememberMeCheckbox = findViewById(R.id.rememberMeCheckbox);
-
-        sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
         // Create a shared preferences instance
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
 
-//        if(sharedPreferences.getBoolean("rememberMe",true))
-//            Toast.makeText(MainActivity.this, sharedPreferences.getString("email", ""), Toast.LENGTH_SHORT).show();
-//        boolean rememberMe = sharedPreferences.getBoolean("rememberMe", false);
-//
+        //if the user opens the app and he had ticked the remember me then auto login.
         if (sharedPreferences.getBoolean("rememberMe",true) && sharedPreferences.getBoolean("loggedIn", false)) {
             String email = sharedPreferences.getString("email", "");
             String password = sharedPreferences.getString("password", "");
