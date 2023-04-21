@@ -12,4 +12,20 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    <color name="primaryColor">#2196F3</color>
+    <color name="primaryVariantColor">#1976D2</color>
+    <color name="onPrimaryColor">#FFFFFF</color>
+    <color name="secondaryColor">#FFC107</color>
+    <color name="secondaryVariantColor">#FFA000</color>
+    <color name="onSecondaryColor">#212121</color>
+    <color name="surfaceColor">#FFFFFF</color>
+    <color name="onSurfaceColor">#212121</color>
+    <color name="errorColor">#B00020</color>
+    <color name="onErrorColor">#FFFFFF</color>
+    <color name="textColorPrimary">#212121</color>
+    <color name="textColorSecondary">#757575</color>
+    <color name="windowBackgroundColor">#F5F5F5</color>
+
 </resources>

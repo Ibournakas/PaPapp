@@ -1,6 +1,7 @@
 package com.example.papapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -31,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        if (sharedPreferences.getBoolean("isDarkModeOn",false)) {
+            setTheme(R.style.Theme_Dark);
+        }
+        else {
+            setTheme(R.style.Theme_Light);
+        }
         setContentView(R.layout.activity_login);
 
         // Initialize views
@@ -40,6 +49,10 @@ public class MainActivity extends AppCompatActivity {
         mRememberMeCheckbox = findViewById(R.id.rememberMeCheckbox);
         // Create a shared preferences instance
         sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+
+        int textColor = getResources().getColor(sharedPreferences.getBoolean("isDarkModeOn", false) ? R.color.white : R.color.black);
+        mEmailEditText.setTextColor(textColor);
+        mPasswordEditText.setTextColor(textColor);
 
         //if the user opens the app and he had ticked the remember me then auto login.
         if (sharedPreferences.getBoolean("rememberMe",true) && sharedPreferences.getBoolean("loggedIn", false)) {

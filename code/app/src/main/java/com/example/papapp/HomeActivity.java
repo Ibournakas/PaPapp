@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 public class HomeActivity extends AppCompatActivity {
     private boolean doubleBackToExitPressedOnce = false;
+    private SharedPreferences sharedPreferences;
     @Override
     public void onBackPressed() {
         if (doubleBackToExitPressedOnce) {
@@ -32,6 +33,13 @@ public class HomeActivity extends AppCompatActivity {
     }
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        if (sharedPreferences.getBoolean("isDarkModeOn",false)) {
+            setTheme(R.style.Theme_Dark);
+        }
+        else {
+            setTheme(R.style.Theme_Light);
+        }
         setContentView(R.layout.home);
         SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
 
