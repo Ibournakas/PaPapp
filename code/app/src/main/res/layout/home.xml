@@ -196,16 +196,17 @@
 
     <ImageButton
         android:id="@+id/imageButton5"
-        android:layout_width="323dp"
-        android:layout_height="83dp"
+        android:layout_width="287dp"
+        android:layout_height="69dp"
         android:adjustViewBounds="true"
         android:background="@drawable/sixthshape"
         android:scaleType="fitEnd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.169"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.881"
+        app:layout_constraintVertical_bias="0.859"
         app:srcCompat="@drawable/bell" />
 
     <TextView
@@ -218,10 +219,24 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.366"
+        app:layout_constraintHorizontal_bias="0.205"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.863" />
+        app:layout_constraintVertical_bias="0.851" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="58dp"
+        android:layout_height="31dp"
+        android:checked="true"
+        android:switchMinWidth="40dp"
+        android:switchPadding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.915"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.835" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

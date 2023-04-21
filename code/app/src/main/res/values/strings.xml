@@ -5,7 +5,7 @@
     <string name="please_login_using_your_university_credentials">Please login using your University credentials!</string>
     <string name="login">Login</string>
     <string name="username">Username:</string>
-    <string name="username1">Name Surname</string>
+    <string name="username1">%s</string>
     <string name="menu">Cafeteria Menu</string>
     <string name="bus">Public Transport</string>
     <string name="library">Library</string>

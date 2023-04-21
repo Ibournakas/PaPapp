@@ -2,9 +2,11 @@ package com.example.papapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -31,6 +33,12 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home);
+        SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+
+        String login_name = sharedPreferences.getString("email", "");
+        String username = String.format(getString(R.string.username1), login_name);
+        TextView myTextView = findViewById(R.id.textView);
+        myTextView.setText(username);
 
 
         Button settingsButton = findViewById(R.id.settingsButton);
