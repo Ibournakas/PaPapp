@@ -9,6 +9,7 @@ import androidx.appcompat.widget.SwitchCompat;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -26,6 +27,7 @@ public class Settings extends AppCompatActivity {
     private SharedPreferences sharedPreferences;
     private Boolean languageChanged = false;
     private SwitchCompat switchCompat;
+    private String  languageSelected;
 
     public void onBackPressed() {
         Intent intent = new Intent(this, HomeActivity.class);
@@ -69,6 +71,12 @@ public class Settings extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinnerLanguages.setAdapter(adapter);
 
+
+        // Get the saved language selection from SharedPreferences
+
+//        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+
+        String originalLanguage = sharedPreferences.getString("language", "English");
         // Set the default selection to the original language
         String[] languages = getResources().getStringArray(R.array.languages);
         int originalLanguageIndex = Arrays.asList(languages).indexOf(originalLanguage);
@@ -78,14 +86,20 @@ public class Settings extends AppCompatActivity {
         spinnerLanguages.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                String languageSelected = parent.getItemAtPosition(position).toString();
+                 languageSelected = parent.getItemAtPosition(position).toString();
                 if (!languageSelected.equals(originalLanguage) && languageChanged==false) {
                     languageChanged = true;
                     Toast.makeText(Settings.this, "Language changed to " + languageSelected, Toast.LENGTH_SHORT).show();
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.putString("language", languageSelected);
+                    editor.apply();
                 }
-                else if (languageChanged==true){
+               else if (languageChanged==true){
                     Toast.makeText(Settings.this, "Language changed to " + languageSelected, Toast.LENGTH_SHORT).show();
-                }
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.putString("language", languageSelected);
+                    editor.apply();
+               }
             }
 
             @Override
@@ -104,6 +118,7 @@ public class Settings extends AppCompatActivity {
                 editor.remove("rememberMe");
                 editor.remove("loggedIn");
                 editor.putBoolean("isDarkModeOn", switchCompat.isChecked());
+                editor.remove("language");
                 editor.apply();
 
                 // Navigate back to the login screen
