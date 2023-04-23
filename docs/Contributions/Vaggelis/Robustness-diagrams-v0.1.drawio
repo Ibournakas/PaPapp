@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-23T16:47:11.878Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="4Wotm1VTQ7w9hYVD0Etb" version="21.2.1" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-04-23T16:52:11.212Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="u5TzjVqiyCS92nrEoLJG" version="21.2.1" type="github" pages="3">
   <diagram name="Robustness v0.1" id="MVgVls76WPpNq6Cu12q4">
     <mxGraphModel dx="1195" dy="637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -73,7 +73,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="Ocoz4Rv9fM806IHursVN" name="Profile">
-    <mxGraphModel dx="989" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="1">
+    <mxGraphModel dx="1195" dy="637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" background="none" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -155,13 +155,13 @@
             <mxPoint x="603" y="480" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="LarBTbAvKDvMy_u_z66k-28" value="" style="endArrow=classic;html=1;rounded=1;entryX=0.485;entryY=1.025;entryDx=0;entryDy=0;entryPerimeter=0;jumpStyle=arc;" edge="1" parent="1" target="k24Qmk1FC9-uk_rF6c7z-4">
+        <mxCell id="LarBTbAvKDvMy_u_z66k-28" value="" style="endArrow=classic;html=1;rounded=1;entryX=0.701;entryY=1.025;entryDx=0;entryDy=0;entryPerimeter=0;jumpStyle=arc;" edge="1" parent="1" target="k24Qmk1FC9-uk_rF6c7z-4">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="633" y="439.67" as="sourcePoint" />
             <mxPoint x="464.68000000000006" y="392.31999999999994" as="targetPoint" />
             <Array as="points">
               <mxPoint x="633" y="390" />
-              <mxPoint x="349" y="390" />
+              <mxPoint x="370" y="390" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -268,6 +268,31 @@
         </mxCell>
         <mxCell id="yMM03D7YMvkdkAP2RvuM-4" value="επιλογή τερματισμού" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;rounded=1;" connectable="0" vertex="1" parent="1">
           <mxGeometry x="225.0012867173075" y="259.9995994116913" as="geometry" />
+        </mxCell>
+        <mxCell id="yMM03D7YMvkdkAP2RvuM-5" value="" style="endArrow=classic;html=1;rounded=1;exitX=0.288;exitY=0.999;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="k24Qmk1FC9-uk_rF6c7z-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="540" as="sourcePoint" />
+            <mxPoint x="200" y="820" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="330" y="390" />
+              <mxPoint x="200" y="390" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yMM03D7YMvkdkAP2RvuM-6" value="επιλογή Εικόνας" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;rounded=1;" connectable="0" vertex="1" parent="1">
+          <mxGeometry x="200.0012867173075" y="584.9995994116913" as="geometry" />
+        </mxCell>
+        <mxCell id="yMM03D7YMvkdkAP2RvuM-7" value="&lt;font face=&quot;Verdana&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Συσκευή Φοιτητή&lt;/span&gt;&lt;/font&gt;" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="820" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yMM03D7YMvkdkAP2RvuM-8" value="&lt;font face=&quot;Verdana&quot;&gt;&lt;font size=&quot;1&quot;&gt;Επιλογή Αρχείου&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="165" y="820" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="yMM03D7YMvkdkAP2RvuM-9" value="" style="endArrow=classic;html=1;rounded=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="160" y="860" as="sourcePoint" />
+            <mxPoint x="130" y="860" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
