@@ -1,12 +1,14 @@
 package com.example.papapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.inputmethod.EditorInfo;
 import android.widget.Button;
@@ -30,6 +32,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        if (sharedPreferences.getBoolean("isDarkModeOn",false)) {
+            setTheme(R.style.Theme_Dark);
+        }
+        else {
+            setTheme(R.style.Theme_Light);
+        }
         setContentView(R.layout.activity_login);
 
         // Initialize views
@@ -37,27 +47,26 @@ public class MainActivity extends AppCompatActivity {
         mPasswordEditText = findViewById(R.id.editText2);
         mLoginButton = findViewById(R.id.button);
         mRememberMeCheckbox = findViewById(R.id.rememberMeCheckbox);
-
-        sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
         // Create a shared preferences instance
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
+        sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
 
+        int textColor = getResources().getColor(sharedPreferences.getBoolean("isDarkModeOn", false) ? R.color.white : R.color.black);
+        mEmailEditText.setTextColor(textColor);
+        mPasswordEditText.setTextColor(textColor);
 
+        //if the user opens the app and he had ticked the remember me then auto login.
+        if (sharedPreferences.getBoolean("rememberMe",true) && sharedPreferences.getBoolean("loggedIn", false)) {
+            String email = sharedPreferences.getString("email", "");
+            String password = sharedPreferences.getString("password", "");
 
-//        boolean rememberMe = sharedPreferences.getBoolean("rememberMe", false);
-//
-//        if (rememberMe && sharedPreferences.getBoolean("loggedIn", false)) {
-//            String email = sharedPreferences.getString("email", "");
-//            String password = sharedPreferences.getString("password", "");
-//
-//            mEmailEditText.setText(email);
-//            mPasswordEditText.setText(password);
-//
-//            // Login automatically
-//            Intent intent = new Intent(MainActivity.this, HomeActivity.class);
-//            startActivity(intent);
-//            finish();
-//        }
+            mEmailEditText.setText(email);
+            mPasswordEditText.setText(password);
+
+            // Login automatically
+            Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+            startActivity(intent);
+            finish();
+        }
 
         mPasswordEditText.setOnKeyListener(new View.OnKeyListener() {
             @Override
@@ -73,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
         mLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                SharedPreferences sharedPreferences = getSharedPreferences("myPrefs", MODE_PRIVATE);
                 // Get user input
                 String email = mEmailEditText.getText().toString().trim();
                 String password = mPasswordEditText.getText().toString().trim();
@@ -96,19 +106,14 @@ public class MainActivity extends AppCompatActivity {
                     boolean rememberMe = mRememberMeCheckbox.isChecked();
                     boolean loggedIn =true;
 
-                    SharedPreferences.Editor editor = getSharedPreferences("myPrefs", MODE_PRIVATE).edit();
+                    SharedPreferences.Editor editor = getSharedPreferences("MyPrefs", MODE_PRIVATE).edit();
                     editor.putString("email", email);
                     editor.putString("password", password);
                     editor.putBoolean("rememberMe", rememberMe);
                     editor.putBoolean("loggedIn", loggedIn);
                     editor.apply();
 
-
-
-//                            Toast.makeText(MainActivity.this, Boolean.toString(loggedIn), Toast.LENGTH_SHORT).show();
-
-
-
+                    //Toast.makeText(MainActivity.this, sharedPreferences.getString("email", ""), Toast.LENGTH_SHORT).show();
 
                     // Start main activity
                     Intent intent = new Intent(MainActivity.this, HomeActivity.class);

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme_Dark" >
+        <item name="android:colorBackground">#383a3d</item>
+        <item name="android:textColor">#f5f5f5</item>
+        <item name="colorControlNormal">#f5f5f5</item>
+        <item name="colorControlActivated">#4CAF50</item>
+    </style>
+
+
+    <style name="Theme_Light">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryVariant">@color/primaryVariantColor</item>
+        <item name="colorOnPrimary">@color/onPrimaryColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryVariantColor</item>
+        <item name="colorOnSecondary">@color/onSecondaryColor</item>
+        <item name="colorSurface">@color/surfaceColor</item>
+        <item name="colorOnSurface">@color/onSurfaceColor</item>
+        <item name="colorError">@color/errorColor</item>
+        <item name="colorOnError">@color/onErrorColor</item>
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:textColorSecondary">@color/textColorSecondary</item>
+        <item name="android:windowBackground">@color/windowBackgroundColor</item>
+    </style>
+
+</resources>
