@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-23T12:58:30.210Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="6_dF-rveacF39ZVD6dld" version="21.2.1" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-04-23T12:59:45.248Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="lmB3o0AC0M6TdKIuELox" version="21.2.1" type="github" pages="3">
   <diagram name="Robustness v0.1" id="MVgVls76WPpNq6Cu12q4">
     <mxGraphModel dx="1195" dy="637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -7,20 +7,17 @@
         <mxCell id="elTGobWyU0mcKyToWQlD-3" value="Φοιτητής&lt;br&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="50" y="20" width="30" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="elTGobWyU0mcKyToWQlD-4" value="Boundary Object" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="140" y="10" width="100" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="elTGobWyU0mcKyToWQlD-5" value="Control Object" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="290" y="20" width="70" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="elTGobWyU0mcKyToWQlD-6" value="Entity Object" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="elTGobWyU0mcKyToWQlD-6" value="&lt;font face=&quot;Verdana&quot; style=&quot;font-size: 10px;&quot;&gt;Entity Object&lt;/font&gt;" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="400" y="10" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="elTGobWyU0mcKyToWQlD-7" value="" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};participant=umlEntity;rotation=-90;" vertex="1" parent="1">
-          <mxGeometry x="470" y="50" width="40" height="200" as="geometry" />
+        <mxCell id="e_00q5FV-QcigGuOATQ4-1" value="&lt;font style=&quot;font-size: 10px;&quot; face=&quot;Verdana&quot;&gt;Κεντρικό Μενού&lt;/font&gt;" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="30" width="100" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="elTGobWyU0mcKyToWQlD-8" value="Φοιτητής&lt;br&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="110" y="160" width="30" height="60" as="geometry" />
+        <mxCell id="e_00q5FV-QcigGuOATQ4-2" value="&lt;font face=&quot;Verdana&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Εμφάνιση&lt;/span&gt;&lt;/font&gt;" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="297" y="30" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="e_00q5FV-QcigGuOATQ4-3" value="&lt;font face=&quot;Verdana&quot; style=&quot;font-size: 10px;&quot;&gt;Επιλογή&lt;br&gt;υπηρεσίας&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="220" y="30" width="77" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
@@ -80,20 +77,23 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="hz4n_Avgy8TK-xSWcDaG-1" value="Φοιτητής&lt;br&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
-          <mxGeometry x="50" y="20" width="30" height="60" as="geometry" />
-        </mxCell>
-        <mxCell id="hz4n_Avgy8TK-xSWcDaG-2" value="Boundary Object" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="140" y="10" width="100" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="hz4n_Avgy8TK-xSWcDaG-3" value="Control Object" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="290" y="20" width="70" height="80" as="geometry" />
-        </mxCell>
-        <mxCell id="hz4n_Avgy8TK-xSWcDaG-4" value="Entity Object" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="400" y="10" width="80" height="80" as="geometry" />
-        </mxCell>
         <mxCell id="GgZ1yNsTdJJ_kCGqDqkG-1" value="Φοιτητής&lt;br&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
           <mxGeometry x="90" y="170" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sHTKHz7hlnB8CTOGr2eN-1" value="Φοιτητής&lt;br&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="30" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="sHTKHz7hlnB8CTOGr2eN-2" value="&lt;font face=&quot;Verdana&quot; style=&quot;font-size: 10px;&quot;&gt;Entity Object&lt;/font&gt;" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="370" y="20" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sHTKHz7hlnB8CTOGr2eN-3" value="&lt;font style=&quot;font-size: 10px;&quot; face=&quot;Verdana&quot;&gt;Κεντρικό Μενού&lt;/font&gt;" style="shape=umlBoundary;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="40" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sHTKHz7hlnB8CTOGr2eN-4" value="&lt;font face=&quot;Verdana&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Εμφάνιση&lt;/span&gt;&lt;/font&gt;" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="267" y="40" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sHTKHz7hlnB8CTOGr2eN-5" value="&lt;font face=&quot;Verdana&quot; style=&quot;font-size: 10px;&quot;&gt;Επιλογή&lt;br&gt;υπηρεσίας&lt;br&gt;&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="190" y="40" width="77" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
