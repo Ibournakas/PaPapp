@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-24T21:46:47.361Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="_nDxB2-t5oY2XTgoPo13" version="21.2.1" type="github" pages="8">
+<mxfile host="app.diagrams.net" modified="2023-04-24T21:51:48.334Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="O3GSaTadOSgXIUPeHb0_" version="21.2.1" type="github" pages="8">
   <diagram name="Robustness v0.1" id="MVgVls76WPpNq6Cu12q4">
     <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
@@ -1739,10 +1739,93 @@
     </mxGraphModel>
   </diagram>
   <diagram id="iimUS6N0N8ivpfQOeGXI" name="Announcements and events">
-    <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="800" pageHeight="775" math="0" shadow="0">
+    <mxGraphModel dx="683" dy="364" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="800" pageHeight="775" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="fguRomNmDSgYbHGpLi2b-1" value="Φοιτητής&lt;br&gt;" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="15" y="30" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fguRomNmDSgYbHGpLi2b-2" value="Εμφάνισε" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="293" y="10" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="fguRomNmDSgYbHGpLi2b-3" value="Κεντρικό Μενού" style="shape=umlBoundary;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="125" y="20" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="fguRomNmDSgYbHGpLi2b-4" value="" style="endArrow=classic;html=1;rounded=1;jumpStyle=arc;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="293" y="49.72" as="sourcePoint" />
+            <mxPoint x="225" y="50" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fguRomNmDSgYbHGpLi2b-5" value="" style="endArrow=classic;html=1;rounded=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="45" y="60" as="sourcePoint" />
+            <mxPoint x="125" y="60" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fguRomNmDSgYbHGpLi2b-6" value="Εμφάνισε" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="148" y="160" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="fguRomNmDSgYbHGpLi2b-8" value="" style="endArrow=classic;html=1;rounded=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="185" y="100" as="sourcePoint" />
+            <mxPoint x="185" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fguRomNmDSgYbHGpLi2b-9" value="&lt;font style=&quot;font-size: 10px;&quot; face=&quot;Verdana&quot;&gt;Οθόνη Ανακοινώσεων&lt;br&gt;&amp;amp;&lt;br&gt;Εκδηλώσεων&lt;br&gt;&lt;/font&gt;" style="shape=umlBoundary;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="273" y="170" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="fguRomNmDSgYbHGpLi2b-10" value="" style="endArrow=classic;html=1;rounded=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="219.5" y="210" as="sourcePoint" />
+            <mxPoint x="269.5" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fguRomNmDSgYbHGpLi2b-11" value="" style="endArrow=classic;html=1;rounded=1;entryX=0.556;entryY=1.019;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.589;exitY=0.006;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="fguRomNmDSgYbHGpLi2b-9" target="fguRomNmDSgYbHGpLi2b-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="332.72" y="100" as="sourcePoint" />
+            <mxPoint x="332.72" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fguRomNmDSgYbHGpLi2b-12" value="επιλογή επιστροφής" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;rounded=1;" connectable="0" vertex="1" parent="1">
+          <mxGeometry x="328.0012867173075" y="119.99959941169129" as="geometry">
+            <mxPoint x="2" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fguRomNmDSgYbHGpLi2b-13" value="Ανακοίνωση&lt;br&gt;ή Event" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="430" y="170" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="fguRomNmDSgYbHGpLi2b-14" value="" style="endArrow=classic;html=1;rounded=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="373" y="209.76" as="sourcePoint" />
+            <mxPoint x="423" y="209.76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fguRomNmDSgYbHGpLi2b-15" value="" style="endArrow=classic;html=1;rounded=1;exitX=0.495;exitY=1.033;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="fguRomNmDSgYbHGpLi2b-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="430" y="270" as="sourcePoint" />
+            <mxPoint x="465" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jotQ-He72qKKKWJjuNrx-1" value="University&lt;br&gt;API" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="290" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jotQ-He72qKKKWJjuNrx-2" value="Εμφάνισε" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="550" y="170" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="jotQ-He72qKKKWJjuNrx-3" value="" style="endArrow=classic;html=1;rounded=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="620" y="209.76" as="sourcePoint" />
+            <mxPoint x="670" y="209.76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jotQ-He72qKKKWJjuNrx-4" value="" style="endArrow=classic;html=1;rounded=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="209.76" as="sourcePoint" />
+            <mxPoint x="550" y="209.76" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
