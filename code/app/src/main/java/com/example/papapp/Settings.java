@@ -8,8 +8,11 @@ import androidx.appcompat.widget.SwitchCompat;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -20,9 +23,9 @@ import android.widget.Switch;
 import android.widget.Toast;
 
 import java.util.Arrays;
+import java.util.Locale;
 
 public class Settings extends AppCompatActivity {
-    private String originalLanguage="English";
     private Boolean mode;
     private SharedPreferences sharedPreferences;
     private Boolean languageChanged = false;
@@ -35,6 +38,21 @@ public class Settings extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
+    private void setLanguage() {
+        String originalLanguage = sharedPreferences.getString("language", "English");
+        Resources resources = getResources();
+        Configuration configuration = resources.getConfiguration();
+        Locale locale = originalLanguage.equals("default") ? Locale.getDefault() : new Locale(originalLanguage);
+        if (originalLanguage.equals("Greek") || originalLanguage.equals("Ελληνικά")) {
+
+            configuration.setLocale(new Locale("el"));
+        } else {
+            configuration.setLocale(locale);
+        }
+        resources.updateConfiguration(configuration, resources.getDisplayMetrics());
+        recreate();
+    }
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
@@ -44,8 +62,28 @@ public class Settings extends AppCompatActivity {
         else {
             setTheme(R.style.Theme_Light);
         }
+        setLanguage();
 
         setContentView(R.layout.settings);
+
+        Spinner spinnerLanguages = findViewById(R.id.spinner2);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.languages, android.R.layout.simple_spinner_item);
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        spinnerLanguages.setAdapter(adapter);
+
+
+        // Get the saved language selection from SharedPreferences
+
+        String originalLanguage = sharedPreferences.getString("language", "English");
+        // Set the default selection to the original language
+        String[] languages = getResources().getStringArray(R.array.languages);
+        int originalLanguageIndex = Arrays.asList(languages).indexOf(originalLanguage);
+        spinnerLanguages.setSelection(originalLanguageIndex);
+        //Toast.makeText(Settings.this, sharedPreferences.getString("language",""), Toast.LENGTH_SHORT).show();
+        // Set the language based on the selected language in the spinner
+
+
+
 //        sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
         boolean isDarkModeOn = sharedPreferences.getBoolean("isDarkModeOn", false);
         switchCompat = findViewById(R.id.switch2);
@@ -65,60 +103,47 @@ public class Settings extends AppCompatActivity {
 
 
 
-
-        Spinner spinnerLanguages = findViewById(R.id.spinner2);
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.languages, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinnerLanguages.setAdapter(adapter);
-
-
-        // Get the saved language selection from SharedPreferences
-
-//        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-
-        String originalLanguage = sharedPreferences.getString("language", "English");
-        // Set the default selection to the original language
-        String[] languages = getResources().getStringArray(R.array.languages);
-        int originalLanguageIndex = Arrays.asList(languages).indexOf(originalLanguage);
-        spinnerLanguages.setSelection(originalLanguageIndex);
-
-
         spinnerLanguages.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                 languageSelected = parent.getItemAtPosition(position).toString();
-                if (!languageSelected.equals(originalLanguage) && languageChanged==false) {
+                languageSelected = parent.getItemAtPosition(position).toString();
+                if (!languageSelected.equals(originalLanguage) && languageChanged == false) {
                     languageChanged = true;
                     Toast.makeText(Settings.this, "Language changed to " + languageSelected, Toast.LENGTH_SHORT).show();
                     SharedPreferences.Editor editor = sharedPreferences.edit();
                     editor.putString("language", languageSelected);
                     editor.apply();
-                }
-               else if (languageChanged==true){
+                    // Set the language based on the selected language in the spinner
+                    setLanguage();
+
+                } else if (languageChanged == true) {
                     Toast.makeText(Settings.this, "Language changed to " + languageSelected, Toast.LENGTH_SHORT).show();
                     SharedPreferences.Editor editor = sharedPreferences.edit();
                     editor.putString("language", languageSelected);
                     editor.apply();
-               }
-            }
+                    // Set the language based on the selected language in the spinner
+                    setLanguage();
 
+                }
+            }
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
 
             }
         });
 
+
+
         Button logout = findViewById(R.id.button2);
         logout.setOnClickListener(view -> {
                 // Clear any user authentication data (e.g. session, token, etc.)
                 SharedPreferences.Editor editor = sharedPreferences.edit();
-
                 editor.remove("email");
                 editor.remove("password");
                 editor.remove("rememberMe");
                 editor.remove("loggedIn");
                 editor.putBoolean("isDarkModeOn", switchCompat.isChecked());
-                editor.remove("language");
+                editor.putString("language",languageSelected);
                 editor.apply();
 
                 // Navigate back to the login screen

@@ -72,8 +72,8 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="99dp"
-        android:layout_height="83dp"
+        android:layout_width="89dp"
+        android:layout_height="75dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.948"
@@ -119,11 +119,11 @@
         android:layout_height="40dp"
         android:text="@string/sound"
         android:textColor="@color/logo2"
-        android:textSize="19dp"
+        android:textSize="16dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintHorizontal_bias="0.471"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.762" />

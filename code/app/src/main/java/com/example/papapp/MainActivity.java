@@ -5,6 +5,8 @@ import androidx.core.content.ContextCompat;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.text.TextUtils;
@@ -19,6 +21,8 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.Locale;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText mEmailEditText;
@@ -28,6 +32,22 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox mRememberMeCheckbox;
 
     private SharedPreferences sharedPreferences;
+
+
+    private void setLanguage() {
+        String originalLanguage = sharedPreferences.getString("language", "English");
+        Resources resources = getResources();
+        Configuration configuration = resources.getConfiguration();
+        Locale locale = originalLanguage.equals("default") ? Locale.getDefault() : new Locale(originalLanguage);
+        if (originalLanguage.equals("Greek") || originalLanguage.equals("Ελληνικά")) {
+
+            configuration.setLocale(new Locale("el"));
+        } else {
+            configuration.setLocale(locale);
+        }
+        resources.updateConfiguration(configuration, resources.getDisplayMetrics());
+        recreate();
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +60,7 @@ public class MainActivity extends AppCompatActivity {
         else {
             setTheme(R.style.Theme_Light);
         }
+        setLanguage();
         setContentView(R.layout.activity_login);
 
         // Initialize views

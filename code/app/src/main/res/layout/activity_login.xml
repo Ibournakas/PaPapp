@@ -34,8 +34,8 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="258dp"
-        android:layout_height="58dp"
+        android:layout_width="280dp"
+        android:layout_height="74dp"
         android:layout_marginTop="40dp"
         android:text="@string/please_login_using_your_university_credentials"
         android:textSize="20dp"
