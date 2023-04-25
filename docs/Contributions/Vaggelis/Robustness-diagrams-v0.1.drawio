@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-04-25T09:43:43.881Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="D5gmop-yI6P3K4YvoCcN" version="21.2.1" type="github" pages="10">
+<mxfile host="app.diagrams.net" modified="2023-04-25T09:48:07.952Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="DP3Xs8egfpWDaQZXma9c" version="21.2.1" type="github" pages="10">
   <diagram name="Robustness v0.1" id="MVgVls76WPpNq6Cu12q4">
     <mxGraphModel dx="1235" dy="679" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
@@ -2359,7 +2359,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="jc7C102heAbMEJmqdcM-" name="Map">
-    <mxGraphModel dx="724" dy="398" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="827" math="0" shadow="1">
+    <mxGraphModel dx="600" dy="330" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="827" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -2491,13 +2491,13 @@
             <mxPoint x="615" y="380" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="68KGdj0LfUdh5vxbZYBE-10" value="" style="endArrow=classic;html=1;rounded=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;jumpStyle=arc;" edge="1" parent="1" target="68KGdj0LfUdh5vxbZYBE-1">
+        <mxCell id="68KGdj0LfUdh5vxbZYBE-10" value="" style="endArrow=classic;html=1;rounded=1;jumpStyle=arc;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="650" y="310" as="sourcePoint" />
-            <mxPoint x="520" y="40" as="targetPoint" />
+            <mxPoint x="510" y="30" as="targetPoint" />
             <Array as="points">
               <mxPoint x="700" y="310" />
-              <mxPoint x="700" y="40" />
+              <mxPoint x="700" y="30" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -2560,21 +2560,72 @@
           <mxGeometry x="310" y="640" width="70" height="80" as="geometry" />
         </mxCell>
         <mxCell id="68KGdj0LfUdh5vxbZYBE-21" value="Εμφάνισε" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="430" y="640" width="70" height="80" as="geometry" />
+          <mxGeometry x="410" y="640" width="70" height="80" as="geometry" />
         </mxCell>
         <mxCell id="68KGdj0LfUdh5vxbZYBE-22" value="" style="endArrow=classic;html=1;rounded=1;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="380" y="679.6600000000001" as="sourcePoint" />
-            <mxPoint x="430" y="679.6600000000001" as="targetPoint" />
+            <mxPoint x="410" y="680" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="68KGdj0LfUdh5vxbZYBE-23" value="&lt;font style=&quot;font-size: 10px;&quot; face=&quot;Verdana&quot;&gt;Πεδίο&lt;br&gt;Συμπλήρωσης&lt;br&gt;&lt;/font&gt;" style="shape=umlBoundary;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="550" y="640" width="100" height="80" as="geometry" />
+          <mxGeometry x="510" y="640" width="100" height="80" as="geometry" />
         </mxCell>
         <mxCell id="68KGdj0LfUdh5vxbZYBE-24" value="" style="endArrow=classic;html=1;rounded=1;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="500" y="679.6600000000001" as="sourcePoint" />
-            <mxPoint x="550" y="679.6600000000001" as="targetPoint" />
+            <mxPoint x="480" y="679.83" as="sourcePoint" />
+            <mxPoint x="510" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="68KGdj0LfUdh5vxbZYBE-25" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Συμπλήρωση&lt;br&gt;Ονόματος&lt;br&gt;&lt;/font&gt;" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="640" y="640" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="68KGdj0LfUdh5vxbZYBE-26" value="" style="endArrow=classic;html=1;rounded=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="610" y="679.83" as="sourcePoint" />
+            <mxPoint x="640" y="680.17" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="68KGdj0LfUdh5vxbZYBE-27" value="buildingsList" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="747" y="640" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="68KGdj0LfUdh5vxbZYBE-28" value="" style="endArrow=classic;html=1;rounded=1;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="679.76" as="sourcePoint" />
+            <mxPoint x="740" y="680.0999999999999" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="68KGdj0LfUdh5vxbZYBE-29" value="Μεγένθυση/&lt;br&gt;Σμίκρυνση" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="740" y="40" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="68KGdj0LfUdh5vxbZYBE-30" value="" style="endArrow=classic;html=1;rounded=1;entryX=0.508;entryY=1.03;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="68KGdj0LfUdh5vxbZYBE-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="680" y="640" as="sourcePoint" />
+            <mxPoint x="730" y="590" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="680" y="620" />
+              <mxPoint x="776" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="68KGdj0LfUdh5vxbZYBE-31" value="" style="endArrow=classic;html=1;rounded=1;jumpStyle=arc;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="740" y="80" as="sourcePoint" />
+            <mxPoint x="650" y="80" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="68KGdj0LfUdh5vxbZYBE-32" value="Εμφάνισε" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="580" y="40" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="68KGdj0LfUdh5vxbZYBE-33" value="" style="endArrow=classic;html=1;rounded=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="68KGdj0LfUdh5vxbZYBE-32" target="OcuEYyr1HvAndJGztBde-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="570" y="170" as="sourcePoint" />
+            <mxPoint x="620" y="120" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="550" y="80" />
+              <mxPoint x="550" y="120" />
+            </Array>
           </mxGeometry>
         </mxCell>
       </root>
