@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">PaPapp</string>
+    <string name="password_label">Κωδικός:</string>
+    <string name="password">Κωδικός:</string>
+    <string name="please_login_using_your_university_credentials">Παρακαλώ συνδεθείτε χρησιμοποιώντας τα πανεπιστημιακά σας στοιχεία!</string>
+    <string name="login">Σύνδεση</string>
+    <string name="username">Όνομα χρήστη:</string>
+    <string name="username1">%s</string>
+    <string name="menu">Μενού Εστίας</string>
+    <string name="bus">Μέσα Μαζικής Μεταφοράς</string>
+    <string name="library">Βιβλιοθήκη</string>
+    <string name="maps">Χάρτες</string>
+    <string name="courses">Μαθήματα</string>
+    <string name="announcements">Ανακοινώσεις και Εκδηλώσεις</string>
+    <string name="settings">Ρυθμίσεις/Προτιμήσεις</string>
+    <string name="sound">ΗΧΟΣ</string>
+    <string name="language">Γλωσσα</string>
+    <string name="dark">Σκοτεινη Λειτουργια</string>
+    <string name="logout">Αποσυνδεση</string>
+    <string name="remember">Να με θυμάσαι</string>
+    <string-array name="languages">
+        <item>English</item>
+        <item>Greek</item>
+    </string-array>
+</resources>
