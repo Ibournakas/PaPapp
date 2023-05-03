@@ -6,6 +6,7 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -57,6 +58,14 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+
+        ImageButton announcements = findViewById(R.id.imageButton5);
+        announcements.setOnClickListener(view -> {
+
+            Intent intent = new Intent( this, Announcements.class);
+
+            startActivity(intent);
+        });
 
         
 
