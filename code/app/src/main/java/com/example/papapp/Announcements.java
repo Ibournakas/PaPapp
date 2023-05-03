@@ -79,28 +79,13 @@ public class Announcements extends  AppCompatActivity{
 
 
                         // Update the ListView with the announcements
-                        adapter.notifyDataSetChanged();
+                        adapter.notifyDataSetInvalidated();
                     }
                 });
             }
         }).start();
 
     }
-//private void fetchAnnouncements() throws IOException {
-//    InputStream inputStream = getResources().getAssets().open("Announce_scrapper.py");
-//    byte[] buffer = new byte[inputStream.available()];
-//    inputStream.read(buffer);
-//    inputStream.close();
-//    // Convert the buffer to a String
-//    String script = new String(buffer);
-//
-//// Run the Python script using the PythonInterpreter class from Jython library
-//    PythonInterpreter python = new PythonInterpreter();
-//    python.exec(script);
-//
-//}
-
-
 
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -113,7 +98,8 @@ public class Announcements extends  AppCompatActivity{
             setTheme(R.style.Theme_Light);
         }
         setContentView(R.layout.announcements);
-        // Fetch and display the announcement data
+
+
         // Set up ListView and adapter
         announcementsListView = findViewById(R.id.list_view);
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, announcementList);
@@ -125,49 +111,12 @@ public class Announcements extends  AppCompatActivity{
 
         // Fetch and display the announcement data
         fetchAnnouncements();
+//        Log.d("Test",announcementList.get(0).substring(1));
 
-//        announcementsTextView = findViewById(R.id.announcementsTextView);
-//        new FetchAnnouncementsTask().execute("https://www.ceid.upatras.gr/el/announcement");
+
+
 
 
     }
-
-//    private class FetchAnnouncementsTask extends AsyncTask<String, Void, String> {
-//
-//        @Override
-//        protected String doInBackground(String... urls) {
-//            String announcementsData = "";
-//
-//            try {
-//                URL url = new URL(urls[0]);
-//                HttpURLConnection urlConnection = (HttpURLConnection) url.openConnection();
-//
-//                InputStream inputStream = urlConnection.getInputStream();
-//                BufferedReader reader = new BufferedReader(new InputStreamReader(inputStream, "UTF-8"));
-//                StringBuilder stringBuilder = new StringBuilder();
-//
-//                String line;
-//                while ((line = reader.readLine()) != null) {
-//                    stringBuilder.append(line);
-//                }
-//
-//                announcementsData = stringBuilder.toString();
-//
-//                reader.close();
-//                inputStream.close();
-//                urlConnection.disconnect();
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//
-//            return announcementsData;
-//        }
-//
-//        @Override
-//        protected void onPostExecute(String result) {
-//            // Update the UI with the fetched announcements data
-//            announcementsTextView.setText(result);
-//        }
-//    }
 
 }
