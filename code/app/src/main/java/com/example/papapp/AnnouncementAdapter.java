@@ -34,6 +34,12 @@ public class AnnouncementAdapter extends RecyclerView.Adapter<AnnouncementAdapte
         holder.authorTextView.setText(announcement.getAuthor());
         holder.contentTextView.setText(announcement.getContent());
     }
+    public void addAnnouncements(List<Announcements> newAnnouncements) {
+        int startPosition = announcements.size();
+        announcements.addAll(newAnnouncements);
+        notifyItemRangeInserted(startPosition, newAnnouncements.size());
+    }
+
 
     @Override
     public int getItemCount() {
@@ -55,5 +61,6 @@ public class AnnouncementAdapter extends RecyclerView.Adapter<AnnouncementAdapte
             authorTextView = view.findViewById(R.id.authorTextView);
             contentTextView = view.findViewById(R.id.contentTextView);
         }
+
     }
 }

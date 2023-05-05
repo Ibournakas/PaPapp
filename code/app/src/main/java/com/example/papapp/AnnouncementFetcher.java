@@ -14,11 +14,16 @@ import okhttp3.Request;
 import okhttp3.Response;
 
 public class AnnouncementFetcher {
-    public static List<Announcements> fetchAnnouncements() throws IOException {
-        final String url = "https://www.ceid.upatras.gr/el/announcement";
-        List<Announcements> announcements = new ArrayList<>();
+    private static final int MAX_PAGES = 3;
+    public static List<Announcements> fetchAnnouncements(int page) throws IOException {
 
+
+
+        String baseUrl = "https://www.ceid.upatras.gr/el/announcement";
+        String url = baseUrl + "?page=" + page;
         Document doc = Jsoup.connect(url).get();
+
+        List<Announcements> announcements = new ArrayList<>();
         Elements elements = doc.select("article.node-announcement");
 
         for (Element element : elements) {
