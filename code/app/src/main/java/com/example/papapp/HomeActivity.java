@@ -62,7 +62,7 @@ public class HomeActivity extends AppCompatActivity {
         ImageButton announcements = findViewById(R.id.imageButton5);
         announcements.setOnClickListener(view -> {
 
-            Intent intent = new Intent( this, Announcements.class);
+            Intent intent = new Intent( this, AnnouncementActivity.class);
 
             startActivity(intent);
         });

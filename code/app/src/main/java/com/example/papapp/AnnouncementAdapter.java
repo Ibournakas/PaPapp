@@ -9,53 +9,51 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+import java.util.List;
 
-public class AnnouncementAdapter extends RecyclerView.Adapter<AnnouncementAdapter.AnnouncementViewHolder> {
+public class AnnouncementAdapter extends RecyclerView.Adapter<AnnouncementAdapter.ViewHolder> {
+    private List<Announcements> announcements;
 
-    private ArrayList<String> announcementList;
-
-    public AnnouncementAdapter(ArrayList<String> announcementList) {
-        this.announcementList = announcementList;
-    }
-
-    @NonNull
-    @Override
-    public AnnouncementViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.announcement_item, parent, false);
-        return new AnnouncementViewHolder(itemView);
+    public AnnouncementAdapter(List<Announcements> announcements) {
+        this.announcements = announcements;
     }
 
     @Override
-    public void onBindViewHolder(@NonNull AnnouncementViewHolder holder, int position) {
-        String announcement = announcementList.get(position);
-        String[] announcementDetails = announcement.split("\n");
-        holder.titleTextView.setText(announcementDetails[1].substring(7));
-        holder.descriptionTextView.setText(announcementDetails[4].substring(9));
-        holder.dateTextView.setText(announcementDetails[0].substring(6));
-        holder.authorTextView.setText(announcementDetails[2].substring(8));
-        holder.linkTextView.setText(announcementDetails[5].substring(8));
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.announcement_item, parent, false);
+        return new ViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(ViewHolder holder, int position) {
+        Announcements announcement = announcements.get(position);
+        holder.dateTextView.setText(announcement.getDate());
+        holder.titleTextView.setText(announcement.getTitle());
+        holder.categoryTextView.setText(announcement.getCategory());
+        holder.authorTextView.setText(announcement.getAuthor());
+        holder.contentTextView.setText(announcement.getContent());
     }
 
     @Override
     public int getItemCount() {
-        return announcementList.size();
+        return announcements.size();
     }
 
-    public static class AnnouncementViewHolder extends RecyclerView.ViewHolder {
-
-        public TextView titleTextView;
-        public TextView descriptionTextView;
+    public static class ViewHolder extends RecyclerView.ViewHolder {
         public TextView dateTextView;
+        public TextView titleTextView;
+        public TextView categoryTextView;
         public TextView authorTextView;
-        public TextView linkTextView;
+        public TextView contentTextView;
 
-        public AnnouncementViewHolder(@NonNull View itemView) {
-            super(itemView);
-            titleTextView = itemView.findViewById(R.id.titleTextView);
-            descriptionTextView = itemView.findViewById(R.id.descriptionTextView);
-            dateTextView = itemView.findViewById(R.id.dateTextView);
-            authorTextView = itemView.findViewById(R.id.authorTextView);
-            linkTextView = itemView.findViewById(R.id.linkTextView);
+        public ViewHolder(View view) {
+            super(view);
+            dateTextView = view.findViewById(R.id.dateTextView);
+            titleTextView = view.findViewById(R.id.titleTextView);
+            categoryTextView = view.findViewById(R.id.categoryTextView);
+            authorTextView = view.findViewById(R.id.authorTextView);
+            contentTextView = view.findViewById(R.id.contentTextView);
         }
     }
 }

@@ -1,168 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-    <TextView
-        android:id="@+id/announcementsTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/announcements_title"
-        android:textSize="24sp"
-        android:textStyle="bold" />
-<!--    Add a ProgressBar to indicate that the announcements are loading -->
-    <ProgressBar
-        android:id="@+id/announcements_progress_bar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:visibility="gone"
-        tools:visibility="gone" />
+    tools:context=".AnnouncementActivity">
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/announcements_recyclerview"
+        android:id="@+id/recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scrollbars="vertical"
-        >
-    </androidx.recyclerview.widget.RecyclerView>
-
-
-    <!-- Add a custom layout for each announcement item -->
-    <LinearLayout
-        android:id="@+id/item_layout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:padding="16dp"
-        tools:visibility="gone">
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/announcement_item" />
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
 
-
-        <TextView
-            android:id="@+id/titleTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/descriptionTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="14sp" />
-
-        <TextView
-            android:id="@+id/dateTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="14sp" />
-
-        <TextView
-            android:id="@+id/authorTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="14sp" />
-
-        <TextView
-            android:id="@+id/linkTextView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="14sp" />
-
-    </LinearLayout>
-
-</LinearLayout >
-    <!--<?xml version="1.0" encoding="utf-8"?>-->
-    <!--<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"-->
-    <!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
-    <!--    xmlns:tools="http://schemas.android.com/tools"-->
-    <!--    android:layout_width="match_parent"-->
-    <!--    android:layout_height="match_parent"-->
-    <!--    android:orientation="vertical">-->
-
-    <!--    &lt;!&ndash; Add a TextView to display the title of the announcements section &ndash;&gt;-->
-    <!--    <TextView-->
-    <!--        android:id="@+id/announcements_title"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:text="@string/announcements_title"-->
-    <!--        android:textSize="24sp"-->
-    <!--        android:textStyle="bold"-->
-    <!--        android:padding="16dp" />-->
-
-    <!--    &lt;!&ndash; Add a RecyclerView to display the announcements &ndash;&gt;-->
-    <!--    <androidx.recyclerview.widget.RecyclerView-->
-    <!--        android:id="@+id/announcements_recycler_view"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="0dp"-->
-    <!--        android:layout_weight="1"-->
-    <!--        android:padding="16dp" />-->
-
-    <!--    &lt;!&ndash; Add a ProgressBar to indicate that the announcements are loading &ndash;&gt;-->
-    <!--    <ProgressBar-->
-    <!--        android:id="@+id/announcements_progress_bar"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_gravity="center"-->
-    <!--        android:visibility="gone" />-->
-
-    <!--    &lt;!&ndash; Add a TextView to display an error message if the announcements fail to load &ndash;&gt;-->
-    <!--    <TextView-->
-    <!--        android:id="@+id/announcements_error_message"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_gravity="center"-->
-    <!--        android:text="@string/announcements_error_message"-->
-    <!--        android:textColor="@android:color/holo_red_dark"-->
-    <!--        android:textSize="18sp"-->
-    <!--        android:textStyle="bold"-->
-    <!--        android:visibility="gone" />-->
-
-    <!--</LinearLayout>-->
-
-
-    <!--    <?xml version="1.0" encoding="utf-8"?>-->
-    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content"-->
-    <!--android:orientation="vertical">-->
-    <!--<TextView-->
-    <!--    android:id="@+id/announcementsTextView"-->
-    <!--    android:layout_width="wrap_content"-->
-    <!--    android:layout_height="wrap_content"-->
-    <!--    android:text="@string/announcements_title"-->
-    <!--    android:textSize="24sp"-->
-    <!--    android:textStyle="bold" />-->
-
-
-    <!--<TextView-->
-    <!--    android:id="@+id/announcement_date"-->
-    <!--    android:layout_width="match_parent"-->
-    <!--    android:layout_height="wrap_content"-->
-    <!--    android:textAppearance="?android:attr/textAppearanceLarge" />-->
-
-    <!--<TextView-->
-    <!--    android:id="@+id/announcement_title"-->
-    <!--    android:layout_width="match_parent"-->
-    <!--    android:layout_height="wrap_content"-->
-    <!--    android:textAppearance="?android:attr/textAppearanceMedium" />-->
-
-    <!--<TextView-->
-    <!--    android:id="@+id/announcement_author"-->
-    <!--    android:layout_width="match_parent"-->
-    <!--    android:layout_height="wrap_content"-->
-    <!--    android:textAppearance="?android:attr/textAppearanceSmall" />-->
-
-    <!--<TextView-->
-    <!--    android:id="@+id/announcement_category"-->
-    <!--    android:layout_width="match_parent"-->
-    <!--    android:layout_height="wrap_content"-->
-    <!--    android:textAppearance="?android:attr/textAppearanceSmall" />-->
-
-    <!--<TextView-->
-    <!--    android:id="@+id/announcement_content"-->
-    <!--    android:layout_width="match_parent"-->
-    <!--    android:layout_height="wrap_content"-->
-    <!--    android:textAppearance="?android:attr/textAppearanceSmall" />-->
-    <!--</LinearLayout>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

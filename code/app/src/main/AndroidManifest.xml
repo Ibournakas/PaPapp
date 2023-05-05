@@ -18,10 +18,14 @@
 
         <activity
             android:name=".HomeActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
-            android:name=".Announcements"
-            android:exported="false" />
+            android:name=".AnnouncementActivity"
+            android:exported="true" />
+
+<!--        <activity-->
+<!--            android:name=".Announcements"-->
+<!--            android:exported="true" />-->
 
         <activity
             android:name=".Settings"
