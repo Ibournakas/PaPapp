@@ -1,43 +1,34 @@
 package com.example.papapp;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.SharedPreferences;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.ProgressBar;
-import android.widget.TextView;
-import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-//
-//import org.python.util.PythonInterpreter;
-//
 
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 
 
 
-import java.io.IOException;
-
-
 public class Announcements extends  AppCompatActivity{
     private SharedPreferences sharedPreferences;
-    private ListView announcementsListView;
+    private RecyclerView announcementsRecyclerView;
     private ProgressBar progressBar;
     private ArrayList<String> announcementList = new ArrayList<>();
-    private ArrayAdapter<String> adapter;
+    private AnnouncementAdapter adapter;
 
     private void fetchAnnouncements() {
+        progressBar= findViewById(R.id.announcements_progress_bar);
         // Show progress bar
         progressBar.setVisibility(View.VISIBLE);
 
@@ -78,15 +69,18 @@ public class Announcements extends  AppCompatActivity{
                         progressBar.setVisibility(View.GONE);
 
 
-                        // Update the ListView with the announcements
-                        adapter.notifyDataSetInvalidated();
+                        // Initialize the adapter with the fetched announcements
+                        adapter = new AnnouncementAdapter(announcementList);
+
+                        // Set the adapter to the RecyclerView
+                        announcementsRecyclerView.setAdapter(adapter);
+
                     }
                 });
             }
         }).start();
 
     }
-
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -100,23 +94,66 @@ public class Announcements extends  AppCompatActivity{
         setContentView(R.layout.announcements);
 
 
-        // Set up ListView and adapter
-        announcementsListView = findViewById(R.id.list_view);
-        adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, announcementList);
-        announcementsListView.setAdapter(adapter);
+        // Set up RecyclerView and adapter
+        announcementsRecyclerView = findViewById(R.id.announcements_recyclerview);
 
+        announcementsRecyclerView.setLayoutManager(new LinearLayoutManager(this));
+        announcementsRecyclerView.setAdapter(new AnnouncementAdapter(new ArrayList<>()));
 
-        // Set up progress bar
-        progressBar = findViewById(R.id.progress_bar);
 
         // Fetch and display the announcement data
         fetchAnnouncements();
-//        Log.d("Test",announcementList.get(0).substring(1));
-
-
-
-
 
     }
 
 }
+
+//   private class FetchAnnouncementsTask extends AsyncTask<Void, Void, ArrayList<String>> {
+//
+//        @Override
+//        protected void onPreExecute() {
+//            // Show progress bar
+//            ProgressBar progressBar = findViewById(R.id.announcements_progress_bar);
+//            progressBar.setVisibility(View.VISIBLE);
+//        }
+//
+//        @Override
+//        protected ArrayList<String> doInBackground(Void... voids) {
+//            ArrayList<String> announcementList = new ArrayList<>();
+//            try {
+//                for (int page = 0; page < 5; page++) {
+//                    String url = "https://www.ceid.upatras.gr/el/announcement?page=" + page;
+//                    Document document = Jsoup.connect(url).get();
+//                    Elements announcementNodes = document.select("article.node-announcement");
+//
+//                    for (Element node : announcementNodes) {
+//                        String date = node.select("div.submitted-date").text().trim().replace('\n', ' ');
+//                        String title = node.select("h2").text().trim();
+//                        String author = node.select("span.username").text().trim();
+//                        String category = node.select("div.field-name-field-announcement-category").text().trim().substring(10);
+//                        String content = node.select("div.content").text().trim();
+//                        // Add the announcement to the list
+//                        announcementList.add("Date: " + date + "\nTitle: " + title + "\nAuthor: " + author + "\nCategory: " + category + "\nContent: " + content + "\n");
+//                    }
+//                }
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//            return announcementList;
+//        }
+//
+//        @Override
+//        protected void onPostExecute(ArrayList<String> announcementList) {
+//            // Hide progress bar
+//            ProgressBar progressBar = findViewById(R.id.announcements_progress_bar);
+//            progressBar.setVisibility(View.GONE);
+//
+//            // Update the RecyclerView with the announcements
+//            RecyclerView recyclerView = findViewById(R.id.announcements_recyclerview);
+//            recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+//            recyclerView.setAdapter(new AnnouncementAdapter(announcementList));
+//        }
+//    }
+//        private void fetchAnnouncements() {
+//            new FetchAnnouncementsTask().execute();
+//        }
