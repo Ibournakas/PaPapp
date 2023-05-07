@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-07T20:07:41.080Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="2PeEx0brEs5f2TB_5qU4" version="21.2.9" type="github" pages="15">
+<mxfile host="app.diagrams.net" modified="2023-05-07T20:09:21.954Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="xSbx9wEs8W2N0kIjRCAY" version="21.2.9" type="github" pages="15">
   <diagram name="Robustness v0.1" id="MVgVls76WPpNq6Cu12q4">
     <mxGraphModel dx="1050" dy="577" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
@@ -3560,7 +3560,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="bI3-2olNDlJ-jUkxfKUB" name="Find and book classroom">
-    <mxGraphModel dx="1050" dy="531" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1000" math="0" shadow="0">
+    <mxGraphModel dx="724" dy="366" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1000" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3648,7 +3648,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="F6IOFbaiQEf_Ip-81myK-19" value="buildingsList" style="ellipse;shape=umlEntity;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="438" y="630" width="80" height="80" as="geometry" />
+          <mxGeometry x="438" y="610" width="80" height="80" as="geometry" />
         </mxCell>
         <mxCell id="F6IOFbaiQEf_Ip-81myK-21" value="επιτυχής αναζήτηση" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;rounded=1;" connectable="0" vertex="1" parent="1">
           <mxGeometry x="478.0012867173075" y="469.9995994116913" as="geometry">
@@ -3852,6 +3852,44 @@
             <Array as="points">
               <mxPoint x="680" y="240" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NLuetBy7Cl0ee33qELJe-37" value="επιτυχής αναζήτηση" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;rounded=1;" connectable="0" vertex="1" parent="1">
+          <mxGeometry x="635.0012867173075" y="369.9995994116913" as="geometry">
+            <mxPoint x="2" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NLuetBy7Cl0ee33qELJe-38" value="" style="endArrow=classic;html=1;rounded=1;exitX=0.031;exitY=0.88;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.574;entryY=1.05;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="F6IOFbaiQEf_Ip-81myK-17" target="F6IOFbaiQEf_Ip-81myK-13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="670" as="sourcePoint" />
+            <mxPoint x="500" y="620" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="420" y="600" />
+              <mxPoint x="390" y="620" />
+              <mxPoint x="253" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NLuetBy7Cl0ee33qELJe-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.363;entryY=1.033;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="F6IOFbaiQEf_Ip-81myK-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="604.92" y="550" as="sourcePoint" />
+            <mxPoint x="605" y="700" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="605" y="710" />
+              <mxPoint x="444" y="710" />
+              <mxPoint x="444" y="690" />
+              <mxPoint x="238" y="690" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NLuetBy7Cl0ee33qELJe-41" value="αποτυχία" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;rounded=1;" connectable="0" vertex="1" parent="1">
+          <mxGeometry x="350.0012867173075" y="619.9995994116913" as="geometry">
+            <mxPoint x="2" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NLuetBy7Cl0ee33qELJe-42" value="αποτυχία" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;rounded=1;" connectable="0" vertex="1" parent="1">
+          <mxGeometry x="340.0012867173075" y="689.9995994116913" as="geometry">
+            <mxPoint x="2" y="-3" as="offset" />
           </mxGeometry>
         </mxCell>
       </root>
