@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-07T18:43:25.220Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="iWwWTBk2CnWrIygojl8O" version="21.2.9" type="github" pages="11">
+<mxfile host="app.diagrams.net" modified="2023-05-07T18:44:41.063Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="RiPthA05pn7PxOoOXCno" version="21.2.9" type="github" pages="11">
   <diagram name="Robustness v0.1" id="MVgVls76WPpNq6Cu12q4">
     <mxGraphModel dx="1050" dy="577" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
@@ -2754,7 +2754,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="PbregFXo6YyvG3BPUOyg" name="v0.2 Manage and rate borrowed textbooks">
-    <mxGraphModel dx="1105" dy="607" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
+    <mxGraphModel dx="913" dy="502" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3020,6 +3020,9 @@
         <mxCell id="vZeuICTMbpo-mGfER86Z-36" value="&lt;font size=&quot;1&quot;&gt;Έλεγχος κριτικής&lt;/font&gt;" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="338" y="720" width="70" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="vZeuICTMbpo-mGfER86Z-52" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" edge="1" parent="1" source="vZeuICTMbpo-mGfER86Z-46" target="vZeuICTMbpo-mGfER86Z-51">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="vZeuICTMbpo-mGfER86Z-46" value="&lt;font size=&quot;1&quot;&gt;Εμφάνισε&lt;/font&gt;" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="465" y="720" width="70" height="80" as="geometry" />
         </mxCell>
@@ -3034,6 +3037,27 @@
         </mxCell>
         <mxCell id="vZeuICTMbpo-mGfER86Z-49" value="επιλογή επιστροφής" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;rounded=1;" connectable="0" vertex="1" parent="1">
           <mxGeometry x="80.0012867173075" y="439.9995994116913" as="geometry">
+            <mxPoint x="2" y="-3" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vZeuICTMbpo-mGfER86Z-51" value="&lt;font size=&quot;1&quot; face=&quot;Verdana&quot;&gt;Οθόνη Επιβεβαίωσης&lt;/font&gt;" style="shape=umlBoundary;whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="450" y="840" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vZeuICTMbpo-mGfER86Z-53" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;entryX=0.916;entryY=0.878;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.84;exitY=0.024;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="vZeuICTMbpo-mGfER86Z-51" target="vZeuICTMbpo-mGfER86Z-27">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="510" y="810" as="sourcePoint" />
+            <mxPoint x="510" y="850" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="534" y="810" />
+              <mxPoint x="580" y="810" />
+              <mxPoint x="580" y="680" />
+              <mxPoint x="130" y="680" />
+              <mxPoint x="130" y="655" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vZeuICTMbpo-mGfER86Z-54" value="επιλογή επιστροφής" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;rounded=1;" connectable="0" vertex="1" parent="1">
+          <mxGeometry x="490.0012867173075" y="679.9995994116913" as="geometry">
             <mxPoint x="2" y="-3" as="offset" />
           </mxGeometry>
         </mxCell>
