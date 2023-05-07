@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-07T20:25:59.998Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="1G5LdkIXGIQ8AXT-q_Pk" version="21.2.9" type="github" pages="15">
+<mxfile host="app.diagrams.net" modified="2023-05-07T20:31:50.916Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="ypvweCRMiN3fjZHwGBwa" version="21.2.9" type="github" pages="15">
   <diagram name="Robustness v0.1" id="MVgVls76WPpNq6Cu12q4">
     <mxGraphModel dx="1050" dy="577" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
@@ -3560,7 +3560,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="bI3-2olNDlJ-jUkxfKUB" name="Find and book classroom">
-    <mxGraphModel dx="875" dy="443" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="500" dy="253" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3743,6 +3743,9 @@
           <mxGeometry x="720" y="140" width="70" height="80" as="geometry" />
         </mxCell>
         <mxCell id="NLuetBy7Cl0ee33qELJe-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NLuetBy7Cl0ee33qELJe-2" target="NLuetBy7Cl0ee33qELJe-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NLuetBy7Cl0ee33qELJe-79" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="NLuetBy7Cl0ee33qELJe-2" target="NLuetBy7Cl0ee33qELJe-78">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="NLuetBy7Cl0ee33qELJe-2" value="&lt;font style=&quot;&quot; face=&quot;Verdana&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Οθόνη αιθουσών και προγράμματος&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="shape=umlBoundary;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
@@ -4020,6 +4023,16 @@
               <mxPoint x="660" y="280" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="NLuetBy7Cl0ee33qELJe-80" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;entryX=1.046;entryY=0.546;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="NLuetBy7Cl0ee33qELJe-78" target="F6IOFbaiQEf_Ip-81myK-48">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="865" y="184" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NLuetBy7Cl0ee33qELJe-78" value="Ακύρωση&lt;br&gt;κράτησης" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="830" y="230" width="70" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
