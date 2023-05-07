@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-07T20:13:35.826Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="Px6QVnsUkY65q3cSnHU1" version="21.2.9" type="github" pages="15">
+<mxfile host="app.diagrams.net" modified="2023-05-07T20:14:24.528Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="CRDsJiy2mdxsxbVsZVtI" version="21.2.9" type="github" pages="15">
   <diagram name="Robustness v0.1" id="MVgVls76WPpNq6Cu12q4">
     <mxGraphModel dx="1050" dy="577" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
@@ -3827,7 +3827,7 @@
           <mxGeometry x="135" y="750" width="70" height="80" as="geometry" />
         </mxCell>
         <mxCell id="NLuetBy7Cl0ee33qELJe-26" value="&lt;font style=&quot;&quot; face=&quot;Verdana&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Ειδοποίηση χρήστη&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="shape=umlBoundary;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="10" y="750" width="100" height="80" as="geometry" />
+          <mxGeometry x="120" y="860" width="100" height="80" as="geometry" />
         </mxCell>
         <mxCell id="NLuetBy7Cl0ee33qELJe-29" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;δέσμευση από&lt;br&gt;&amp;nbsp;άλλο άτομο&lt;/font&gt;" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;rounded=1;" connectable="0" vertex="1" parent="1">
           <mxGeometry x="240.0012867173075" y="769.9995994116913" as="geometry">
@@ -3903,8 +3903,8 @@
             <mxPoint x="610" y="830" as="sourcePoint" />
             <mxPoint x="750" y="920" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="810" y="558" />
-              <mxPoint x="810" y="920" />
+              <mxPoint x="800" y="558" />
+              <mxPoint x="800" y="920" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -3926,7 +3926,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="NLuetBy7Cl0ee33qELJe-53" value="αποτυχία" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;rounded=1;" connectable="0" vertex="1" parent="1">
-          <mxGeometry x="790.0012867173075" y="909.9995994116913" as="geometry">
+          <mxGeometry x="780.0012867173075" y="899.9995994116913" as="geometry">
             <mxPoint x="2" y="-3" as="offset" />
           </mxGeometry>
         </mxCell>
@@ -3935,6 +3935,17 @@
         </mxCell>
         <mxCell id="NLuetBy7Cl0ee33qELJe-54" value="Εμφάνισε" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="680" y="880" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NLuetBy7Cl0ee33qELJe-56" value="" style="endArrow=classic;html=1;rounded=1;exitX=0.594;exitY=1.025;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1.034;entryY=0.625;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="NLuetBy7Cl0ee33qELJe-43" target="F6IOFbaiQEf_Ip-81myK-48">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550" y="930" as="sourcePoint" />
+            <mxPoint x="810" y="160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="572" y="990" />
+              <mxPoint x="810" y="990" />
+              <mxPoint x="810" y="190" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
