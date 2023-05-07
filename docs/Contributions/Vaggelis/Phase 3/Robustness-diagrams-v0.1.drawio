@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-07T20:14:41.181Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="VFTlBV64y4IJzCmv2tyL" version="21.2.9" type="github" pages="15">
+<mxfile host="app.diagrams.net" modified="2023-05-07T20:16:39.776Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="Cy8JTrCrBJv3aI5VGUJt" version="21.2.9" type="github" pages="15">
   <diagram name="Robustness v0.1" id="MVgVls76WPpNq6Cu12q4">
     <mxGraphModel dx="1050" dy="577" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
@@ -3560,7 +3560,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="bI3-2olNDlJ-jUkxfKUB" name="Find and book classroom">
-    <mxGraphModel dx="1050" dy="531" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1000" math="0" shadow="0">
+    <mxGraphModel dx="724" dy="366" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1000" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -3896,7 +3896,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="NLuetBy7Cl0ee33qELJe-43" value="&lt;font style=&quot;&quot; face=&quot;Verdana&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Οθόνη ανεπιτυχούς ελέγχου&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="shape=umlBoundary;whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
-          <mxGeometry x="513" y="880" width="100" height="80" as="geometry" />
+          <mxGeometry x="540" y="890" width="100" height="80" as="geometry" />
         </mxCell>
         <mxCell id="NLuetBy7Cl0ee33qELJe-44" value="" style="endArrow=classic;html=1;rounded=1;exitX=1.103;exitY=0.604;exitDx=0;exitDy=0;exitPerimeter=0;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="NLuetBy7Cl0ee33qELJe-8">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -3941,9 +3941,32 @@
             <mxPoint x="550" y="930" as="sourcePoint" />
             <mxPoint x="810" y="160" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="572" y="990" />
+              <mxPoint x="600" y="990" />
               <mxPoint x="810" y="990" />
               <mxPoint x="810" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NLuetBy7Cl0ee33qELJe-57" value="&lt;font style=&quot;&quot; face=&quot;Verdana&quot;&gt;&lt;font style=&quot;font-size: 10px;&quot;&gt;Μήνυμα σφάλματος χρόνου&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="shape=umlBoundary;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="870" width="100" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NLuetBy7Cl0ee33qELJe-58" value="" style="endArrow=classic;html=1;rounded=1;exitX=0.074;exitY=0.89;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="NLuetBy7Cl0ee33qELJe-15" target="NLuetBy7Cl0ee33qELJe-57">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="830" as="sourcePoint" />
+            <mxPoint x="450" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NLuetBy7Cl0ee33qELJe-59" value="μη αποδεκτός χρόνος" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;rounded=1;" connectable="0" vertex="1" parent="1">
+          <mxGeometry x="550.0012867173075" y="849.9995994116913" as="geometry">
+            <mxPoint x="-12" y="-1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NLuetBy7Cl0ee33qELJe-60" value="" style="endArrow=classic;html=1;rounded=1;entryX=0.063;entryY=0.81;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="NLuetBy7Cl0ee33qELJe-12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="468" y="910" as="sourcePoint" />
+            <mxPoint x="700" y="840" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="640" y="860" />
             </Array>
           </mxGeometry>
         </mxCell>
