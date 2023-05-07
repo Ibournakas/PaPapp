@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-07T18:43:06.290Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="DgUTtmIiqqE65xLyQbup" version="21.2.9" type="github" pages="11">
+<mxfile host="app.diagrams.net" modified="2023-05-07T18:43:25.220Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="iWwWTBk2CnWrIygojl8O" version="21.2.9" type="github" pages="11">
   <diagram name="Robustness v0.1" id="MVgVls76WPpNq6Cu12q4">
     <mxGraphModel dx="1050" dy="577" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
@@ -2754,11 +2754,11 @@
     </mxGraphModel>
   </diagram>
   <diagram id="PbregFXo6YyvG3BPUOyg" name="v0.2 Manage and rate borrowed textbooks">
-    <mxGraphModel dx="913" dy="502" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
+    <mxGraphModel dx="1105" dy="607" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="vZeuICTMbpo-mGfER86Z-50" value="" style="endArrow=classic;html=1;rounded=1;exitX=0.168;exitY=0.195;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.883;entryY=0.918;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="vZeuICTMbpo-mGfER86Z-13" target="yoL7P4IeyiL9WT8x2mCV-6">
+        <mxCell id="vZeuICTMbpo-mGfER86Z-50" value="" style="endArrow=classic;html=1;rounded=1;exitX=0.168;exitY=0.195;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.883;entryY=0.918;entryDx=0;entryDy=0;entryPerimeter=0;jumpStyle=arc;" edge="1" parent="1" source="vZeuICTMbpo-mGfER86Z-13" target="yoL7P4IeyiL9WT8x2mCV-6">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="595" y="470" as="sourcePoint" />
             <mxPoint x="594.64" y="435" as="targetPoint" />
@@ -2799,7 +2799,7 @@
         <mxCell id="yoL7P4IeyiL9WT8x2mCV-6" value="Εμφάνισε" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
           <mxGeometry x="148" y="160" width="70" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="yoL7P4IeyiL9WT8x2mCV-7" value="" style="endArrow=classic;html=1;rounded=1;exitX=0.548;exitY=1.029;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="yoL7P4IeyiL9WT8x2mCV-9" target="yoL7P4IeyiL9WT8x2mCV-15">
+        <mxCell id="yoL7P4IeyiL9WT8x2mCV-7" value="" style="endArrow=classic;html=1;rounded=1;exitX=0.548;exitY=1.029;exitDx=0;exitDy=0;exitPerimeter=0;jumpStyle=arc;" edge="1" parent="1" source="yoL7P4IeyiL9WT8x2mCV-9" target="yoL7P4IeyiL9WT8x2mCV-15">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="189.5" y="250" as="sourcePoint" />
             <mxPoint x="330" y="310" as="targetPoint" />
