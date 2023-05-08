@@ -12,6 +12,9 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="dark_100">#121212</color>
+
+    <color name="greyblue">#bfcde3</color>
 
 
     <color name="primaryColor">#2196F3</color>

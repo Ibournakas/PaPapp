@@ -18,7 +18,12 @@
     <string name="dark">Σκοτεινη Λειτουργια</string>
     <string name="logout">Αποσυνδεση</string>
     <string name="remember">Να με θυμάσαι</string>
+    <string name="announcements_title">Ανακοινώσεις</string>
+    <string name="announcements_error_message">Σφάλμα εύρεσης ανακοινώσεων</string>
+    <string name="next_button_text">Φόρτωση περισσότερων</string>
+    <string name="cafeteria">Εστία</string>
     <string-array name="languages">
+
         <item>English</item>
         <item>Greek</item>
     </string-array>

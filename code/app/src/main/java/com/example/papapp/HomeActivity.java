@@ -5,7 +5,9 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
+import android.text.Html;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -57,6 +59,21 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+
+        ImageButton announcements = findViewById(R.id.imageButton5);
+        announcements.setOnClickListener(view -> {
+
+            Intent intent = new Intent( this, AnnouncementActivity.class);
+
+            startActivity(intent);
+        });
+
+        ImageButton cafeteria = findViewById(R.id.imageButton7);
+        cafeteria.setOnClickListener(view -> {
+
+            Intent intent= new Intent(this, CafeteriaActivity.class);
+            startActivity(intent);
+        });
 
         
 
