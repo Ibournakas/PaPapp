@@ -22,6 +22,9 @@
         <activity
             android:name=".AnnouncementActivity"
             android:exported="true" />
+        <activity
+            android:name=".CafeteriaActivity"
+            android:exported="true" />
 
 <!--        <activity-->
 <!--            android:name=".Announcements"-->

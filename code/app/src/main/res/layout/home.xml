@@ -62,7 +62,7 @@
         android:layout_width="113dp"
         android:layout_height="46dp"
         android:layout_marginStart="84dp"
-        android:text="@string/menu"
+        android:text="@string/cafeteria"
         android:textAlignment="center"
         android:textColor="@color/logo2"
         android:textSize="19dp"
@@ -70,7 +70,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.284" />
+        app:layout_constraintVertical_bias="0.277" />
 
     <ImageButton
         android:id="@+id/imageButton3"

@@ -14,6 +14,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="dark_100">#121212</color>
 
+    <color name="greyblue">#bfcde3</color>
+
 
     <color name="primaryColor">#2196F3</color>
     <color name="primaryVariantColor">#1976D2</color>

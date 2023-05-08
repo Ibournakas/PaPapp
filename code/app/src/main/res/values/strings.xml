@@ -21,6 +21,11 @@
     <string name="announcements_title">Announcements</string>
     <string name="announcements_error_message">Error loading announcements</string>
     <string name="next_button_text">Load More</string>
+    <string name="cafeteria">Cafeteria</string>
+    <string name="rationcard">Ration Card</string>
+    <string name="coupons">Buy Coupons</string>
+    <string name="waitingtime">Waiting Time</string>
+    <string name="reviews">Reviews</string>
     <string-array name="languages">
             <item>English</item>
             <item>Greek</item>
