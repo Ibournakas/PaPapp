@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-08T20:56:00.978Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="lwU6mXlqMAbqHwjekGRi" version="21.2.9" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-08T20:56:13.391Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="uezCUOvDMsGuOkFVFmj3" version="21.2.9" type="github">
   <diagram name="Page-1" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="1195" dy="637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
@@ -121,7 +121,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="kRKsZhM11925azcYvkU_-20" value="Κεντρικό&lt;br&gt;Μενού" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="720" y="320" width="120" height="80" as="geometry" />
+          <mxGeometry x="950" y="320" width="120" height="80" as="geometry" />
         </mxCell>
         <mxCell id="kRKsZhM11925azcYvkU_-21" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Επιλογή &lt;br&gt;επιστροφής&lt;br&gt;&lt;/font&gt;" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="kRKsZhM11925azcYvkU_-13" target="kRKsZhM11925azcYvkU_-10">
           <mxGeometry width="80" relative="1" as="geometry">
@@ -175,7 +175,7 @@
           <mxGeometry x="650" y="530" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="kRKsZhM11925azcYvkU_-41" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Αναγνωσμένα:class&lt;/font&gt;" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
-          <mxGeometry x="960" y="80" width="100" height="540" as="geometry" />
+          <mxGeometry x="840" y="80" width="100" height="540" as="geometry" />
         </mxCell>
         <mxCell id="kRKsZhM11925azcYvkU_-42" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" vertex="1" parent="kRKsZhM11925azcYvkU_-41">
           <mxGeometry x="45" y="220" width="10" height="40" as="geometry" />
