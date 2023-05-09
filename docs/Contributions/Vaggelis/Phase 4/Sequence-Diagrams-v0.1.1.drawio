@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-09T16:21:21.400Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="GspXWohp9lIP1mU0kX7y" version="21.2.9" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2023-05-09T16:21:46.854Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="vZKT7sHQIuymTFpwHZdP" version="21.2.9" type="github" pages="7">
   <diagram name="Announcements and events" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="1434" dy="707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
@@ -2630,7 +2630,7 @@
           <mxGeometry x="45" y="680" width="10" height="100" as="geometry" />
         </mxCell>
         <mxCell id="_jPoAMAg182DByiUpIvI-3" value="Εμφάνιση επιβεβαίωσης" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" target="_jPoAMAg182DByiUpIvI-2">
-          <mxGeometry x="-0.6119" width="80" relative="1" as="geometry">
+          <mxGeometry x="-0.5652" width="80" relative="1" as="geometry">
             <mxPoint x="195" y="700" as="sourcePoint" />
             <mxPoint x="295" y="700" as="targetPoint" />
             <Array as="points">
@@ -2647,7 +2647,7 @@
         <mxCell id="_jPoAMAg182DByiUpIvI-4" value="alt3" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" vertex="1" parent="1">
           <mxGeometry x="10" y="640" width="590" height="380" as="geometry" />
         </mxCell>
-        <mxCell id="_jPoAMAg182DByiUpIvI-7" value="Approve" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" vertex="1" parent="1">
+        <mxCell id="_jPoAMAg182DByiUpIvI-7" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Approve&lt;/font&gt;" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" vertex="1" parent="1">
           <mxGeometry x="20" y="690" width="550" height="120" as="geometry" />
         </mxCell>
         <mxCell id="_jPoAMAg182DByiUpIvI-10" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;dashed=1;" edge="1" parent="1" source="_jPoAMAg182DByiUpIvI-2" target="_jPoAMAg182DByiUpIvI-8">
@@ -2669,6 +2669,9 @@
           <mxGeometry x="-0.4383" y="2" relative="1" as="geometry">
             <mxPoint x="1" y="-12" as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="_jPoAMAg182DByiUpIvI-16" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;Disapprove&lt;/font&gt;" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="20" y="810" width="550" height="120" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
