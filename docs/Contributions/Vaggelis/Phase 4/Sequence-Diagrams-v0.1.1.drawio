@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-09T16:09:58.243Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="8oqcF16NOAHBXRY6_G5A" version="21.2.9" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2023-05-09T16:11:22.102Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="ve9HRM4zWd4K6Wb-lUQ2" version="21.2.9" type="github" pages="7">
   <diagram name="Announcements and events" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="1434" dy="707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
@@ -2502,12 +2502,25 @@
         </mxCell>
         <mxCell id="6HLxZBJOvH0HUPsDg90c-1" value="Έξοδος" style="html=1;verticalAlign=bottom;startArrow=oval;startFill=1;endArrow=block;startSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="zMcy3bDQCKr0mbsXNL2l-1">
           <mxGeometry width="60" relative="1" as="geometry">
-            <mxPoint x="50" y="374.00000000000006" as="sourcePoint" />
-            <mxPoint x="116" y="374.25000000000006" as="targetPoint" />
+            <mxPoint x="54" y="374.00000000000006" as="sourcePoint" />
+            <mxPoint x="120" y="374.25000000000006" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="6HLxZBJOvH0HUPsDg90c-2" value="alt1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" vertex="1" parent="zMcy3bDQCKr0mbsXNL2l-1">
           <mxGeometry x="-350" y="314" width="470" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="6HLxZBJOvH0HUPsDg90c-3" value="Επισήμανση &lt;br&gt;αγαπημένου" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="WwnvzanvyLX9TXncPYFx-2" target="WwnvzanvyLX9TXncPYFx-5">
+          <mxGeometry x="-0.0897" width="80" relative="1" as="geometry">
+            <mxPoint x="90" y="449.9999999999999" as="sourcePoint" />
+            <mxPoint x="190" y="449.9999999999999" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="155" y="450" />
+              <mxPoint x="170" y="430" />
+              <mxPoint x="160" y="450" />
+              <mxPoint x="135" y="430" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
