@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-09T14:38:17.267Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="BD9LauH87aNAQS34pkej" version="21.2.9" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2023-05-09T14:39:01.736Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="v_GTiK8xgPX7PgOKF6CL" version="21.2.9" type="github" pages="4">
   <diagram name="Announcements and events" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
@@ -1143,7 +1143,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="CCTzLQbIskVZ4PaO7nYz" name="Cafeteria Menu">
-    <mxGraphModel dx="229" dy="122" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="989" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -1550,12 +1550,13 @@
         <mxCell id="PPOKSC7hsilISgCJzjLk-19" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" vertex="1" parent="1">
           <mxGeometry x="785" y="840" width="10" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="PPOKSC7hsilISgCJzjLk-21" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;dashed=1;" edge="1" parent="1">
+        <mxCell id="PPOKSC7hsilISgCJzjLk-21" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;dashed=1;" edge="1" parent="1" source="PPOKSC7hsilISgCJzjLk-19" target="PPOKSC7hsilISgCJzjLk-6">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="775" y="879.31" as="sourcePoint" />
-            <mxPoint x="670" y="879" as="targetPoint" />
+            <mxPoint x="700" y="880" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="790" y="879" />
+              <mxPoint x="700" y="890" />
+              <mxPoint x="720" y="880" />
               <mxPoint x="675" y="859.31" />
               <mxPoint x="735" y="839.31" />
             </Array>
@@ -1563,7 +1564,7 @@
         </mxCell>
         <mxCell id="PPOKSC7hsilISgCJzjLk-22" value="προσκόμιση &lt;br&gt;μενού ημέρας" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="PPOKSC7hsilISgCJzjLk-21">
           <mxGeometry x="-0.2564" y="-3" relative="1" as="geometry">
-            <mxPoint x="14" y="34" as="offset" />
+            <mxPoint x="6" y="-17" as="offset" />
           </mxGeometry>
         </mxCell>
         <mxCell id="PPOKSC7hsilISgCJzjLk-23" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;" edge="1" parent="1" source="PPOKSC7hsilISgCJzjLk-6">
