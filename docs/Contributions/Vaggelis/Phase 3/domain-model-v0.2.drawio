@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-04-26T22:08:02.303Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="8Kfo3xoVDtNoDllGJoBm" version="21.2.2" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-09T18:23:33.443Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="bxKC3LtW0dGWpkL39jtf" version="21.2.9" type="github">
   <diagram name="domain model v0.2" id="929967ad-93f9-6ef4-fab6-5d389245f69c">
-    <mxGraphModel dx="1050" dy="2326" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="827" pageHeight="583" background="none" math="0" shadow="0">
+    <mxGraphModel dx="677" dy="3713.5" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1.5" pageWidth="827" pageHeight="583" background="none" math="0" shadow="0">
       <root>
         <mxCell id="0" style=";html=1;" />
         <mxCell id="1" style=";html=1;" parent="0" />
@@ -398,6 +398,22 @@
         </mxCell>
         <mxCell id="F4mnPda2_DduMFF0NXxy-18" value="+ onClick()&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;# onCreate()" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="IVOW1CMZrd3Iir7cURom-6" vertex="1">
           <mxGeometry y="66" width="160" height="21" as="geometry" />
+        </mxCell>
+        <mxCell id="l7WrpW3fSKbW_X1vtBE9-1" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="220" y="-1820" as="sourcePoint" />
+            <mxPoint x="425" y="-1820" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="220" y="-1820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="l7WrpW3fSKbW_X1vtBE9-2" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="400" y="-1910" as="sourcePoint" />
+            <mxPoint x="240" y="-1910" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
