@@ -1,9 +1,34 @@
-<mxfile host="app.diagrams.net" modified="2023-05-09T15:37:28.697Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" version="21.2.9" etag="0SI1PQbGkm7L4bjNesIN" type="github">
-  <diagram name="Page-1" id="SOupixYz_gMmX98JivXm">
-    <mxGraphModel>
+<mxfile host="app.diagrams.net" modified="2023-05-09T18:24:49.178Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="k-lxIXhmEUxakVuiN-B9" version="21.2.9" type="github">
+  <diagram name="domain-model-v0.3" id="SOupixYz_gMmX98JivXm">
+    <mxGraphModel dx="989" dy="2181" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="zhgDM3rOUE8lGy7damse-69" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Student&lt;/b&gt;&lt;/font&gt;" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#8e0b32;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="430" y="-1600" width="160" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="zhgDM3rOUE8lGy7damse-71" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;" edge="1" parent="zhgDM3rOUE8lGy7damse-69" target="zhgDM3rOUE8lGy7damse-70">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint y="50" as="sourcePoint" />
+            <mxPoint x="205" y="50" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-120" y="50" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zhgDM3rOUE8lGy7damse-70" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Profile&lt;/b&gt;&lt;/font&gt;" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#8e0b32;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="230" y="-1480" width="160" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="zhgDM3rOUE8lGy7damse-73" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;file&lt;/b&gt;&lt;/font&gt;" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#8e0b32;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="10" y="-1480" width="160" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="zhgDM3rOUE8lGy7damse-74" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="zhgDM3rOUE8lGy7damse-70" target="zhgDM3rOUE8lGy7damse-73">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="280" y="-1330" as="sourcePoint" />
+            <mxPoint x="485" y="-1330" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
