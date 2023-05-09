@@ -1,0 +1,1 @@
+Old Sequence-Diagrams and Domain-Model were wiped due to filename conflicts
