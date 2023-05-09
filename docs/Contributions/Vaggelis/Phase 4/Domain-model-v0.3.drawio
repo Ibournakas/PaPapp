@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-05-09T18:57:22.883Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="tk6asXCs2TGKI85YHOnU" version="21.2.9" type="github">
+<mxfile host="app.diagrams.net" modified="2023-05-09T19:12:42.568Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="Q13jB95xJhhqIeVl_ybe" version="21.2.9" type="github">
   <diagram name="domain-model-v0.3" id="SOupixYz_gMmX98JivXm">
-    <mxGraphModel dx="1687" dy="2486" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="819" dy="2058" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -288,6 +288,18 @@
               <mxPoint x="800" y="-1120" />
               <mxPoint x="750" y="-1120" />
             </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zhgDM3rOUE8lGy7damse-137" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;Ingredients&lt;/b&gt;&lt;/font&gt;" style="swimlane;html=1;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#8e0b32;horizontalStack=0;resizeParent=1;resizeLast=0;collapsible=1;marginBottom=0;swimlaneFillColor=#ffffff;align=center;rounded=1;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=12;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="900" y="-1360" width="160" height="84" as="geometry">
+            <mxRectangle x="289.94" y="-10" width="100" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zhgDM3rOUE8lGy7damse-138" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.499;entryY=-0.044;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="zhgDM3rOUE8lGy7damse-106" target="zhgDM3rOUE8lGy7damse-137">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="880" y="-1390" as="sourcePoint" />
+            <mxPoint x="940" y="-1390" as="targetPoint" />
+            <Array as="points" />
           </mxGeometry>
         </mxCell>
       </root>
