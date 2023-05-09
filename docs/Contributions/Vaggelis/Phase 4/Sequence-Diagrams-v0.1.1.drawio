@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-09T13:08:16.633Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="flm3vDashm2v2AtbXbxR" version="21.2.9" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2023-05-09T13:11:34.750Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="d1-f6rpmAVwkHAgaVU1n" version="21.2.9" type="github" pages="3">
   <diagram name="Announcements and events" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
@@ -938,7 +938,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="WmUvftH9vuoAWDTpZm2W-25" value="frame" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" vertex="1" parent="1">
-          <mxGeometry x="10" y="370" width="760" height="200" as="geometry" />
+          <mxGeometry x="10" y="370" width="630" height="200" as="geometry" />
         </mxCell>
         <mxCell id="WmUvftH9vuoAWDTpZm2W-28" value="Άνοιγμα ιστότοπου" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="WmUvftH9vuoAWDTpZm2W-2" target="WmUvftH9vuoAWDTpZm2W-6">
           <mxGeometry x="-0.5926" width="80" relative="1" as="geometry">
@@ -970,6 +970,9 @@
               <mxPoint x="245" y="550" />
             </Array>
           </mxGeometry>
+        </mxCell>
+        <mxCell id="nmS55TBLbd242WNZaUlM-3" value="frame" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" vertex="1" parent="1">
+          <mxGeometry x="10" y="570" width="760" height="200" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
