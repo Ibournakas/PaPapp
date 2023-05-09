@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-09T14:22:48.336Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="R-z-VLsVApDSqYuCKeFw" version="21.2.9" type="github" pages="4">
+<mxfile host="app.diagrams.net" modified="2023-05-09T14:24:32.083Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="fn83X3dp2QE3_WRGwMUD" version="21.2.9" type="github" pages="4">
   <diagram name="Announcements and events" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
@@ -1143,10 +1143,26 @@
     </mxGraphModel>
   </diagram>
   <diagram id="CCTzLQbIskVZ4PaO7nYz" name="Cafeteria Menu">
-    <mxGraphModel dx="989" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="jYENb0dCq5p91LtRq-er-1" value="Επιλογή &lt;br&gt;επιστροφής" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="jYENb0dCq5p91LtRq-er-2">
+          <mxGeometry x="-0.8792" width="80" relative="1" as="geometry">
+            <mxPoint x="195" y="300" as="sourcePoint" />
+            <mxPoint x="785" y="430" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="310" y="310" />
+              <mxPoint x="480" y="300" />
+              <mxPoint x="580" y="390" />
+              <mxPoint x="280" y="400" />
+              <mxPoint x="135" y="410" />
+              <mxPoint x="70" y="399.87" />
+              <mxPoint x="-10" y="379.87" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="5t5Vyr2ss_bEebxlMKmb-14" value="Επιλογή &lt;br&gt;Φαγητού" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="1Xk8iwyqWP1LuXGrcJ5m-2" target="5t5Vyr2ss_bEebxlMKmb-12">
           <mxGeometry x="-0.6667" width="80" relative="1" as="geometry">
             <mxPoint x="90" y="200" as="sourcePoint" />
@@ -1262,6 +1278,19 @@
             </Array>
             <mxPoint as="offset" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="5t5Vyr2ss_bEebxlMKmb-18" value="Εμφάνιση Υλικών" style="endArrow=open;endSize=12;dashed=1;html=1;rounded=0;" edge="1" parent="1" source="5t5Vyr2ss_bEebxlMKmb-12" target="1Xk8iwyqWP1LuXGrcJ5m-4">
+          <mxGeometry x="-0.1" y="-10" width="160" relative="1" as="geometry">
+            <mxPoint x="290" y="270" as="sourcePoint" />
+            <mxPoint x="210" y="270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="255" y="270" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jYENb0dCq5p91LtRq-er-2" value="Κεντρικό&lt;br&gt;Μενού" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1120" y="260" width="110" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
