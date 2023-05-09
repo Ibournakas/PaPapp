@@ -1,1 +1,1 @@
-test
+Old Sequence-Diagrams were wiped due to filename issues
