@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-09T14:53:52.294Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="Vv7lgHz0S-ziFVTVgT-r" version="21.2.9" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2023-05-09T14:55:06.824Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="P5XmJrdks05DDOYOdo4i" version="21.2.9" type="github" pages="5">
   <diagram name="Announcements and events" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
@@ -1738,7 +1738,7 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="60" y="300" as="sourcePoint" />
             <Array as="points">
-              <mxPoint x="80" y="300" />
+              <mxPoint x="80" y="290" />
               <mxPoint x="80" y="330" />
             </Array>
           </mxGeometry>
@@ -1772,6 +1772,34 @@
               <mxPoint x="180" y="240" />
               <mxPoint x="160" y="260" />
               <mxPoint x="100" y="240" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fJFwIZt521SzoYWGCoe7-1" value="Επιλογή &lt;br&gt;επιστροφής" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="fJFwIZt521SzoYWGCoe7-2">
+          <mxGeometry x="-0.8792" width="80" relative="1" as="geometry">
+            <mxPoint x="195" y="390" as="sourcePoint" />
+            <mxPoint x="785" y="430" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="580" y="390" />
+              <mxPoint x="280" y="400" />
+              <mxPoint x="135" y="410" />
+              <mxPoint x="70" y="399.87" />
+              <mxPoint x="-10" y="379.87" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fJFwIZt521SzoYWGCoe7-2" value="Κεντρικό&lt;br&gt;Μενού" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="910" y="350" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="fJFwIZt521SzoYWGCoe7-3" value="&lt;font style=&quot;font-size: 9px;&quot;&gt;Επιλογή &lt;br&gt;Εμφάνιση στο χάρτη&lt;/font&gt;" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="YfNgbKppYxCj2JIGuw2c-2" target="YfNgbKppYxCj2JIGuw2c-5">
+          <mxGeometry x="-0.1" width="80" relative="1" as="geometry">
+            <mxPoint x="90" y="420" as="sourcePoint" />
+            <mxPoint x="180" y="420" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="175" y="420" />
+              <mxPoint x="95" y="400" />
             </Array>
             <mxPoint as="offset" />
           </mxGeometry>
