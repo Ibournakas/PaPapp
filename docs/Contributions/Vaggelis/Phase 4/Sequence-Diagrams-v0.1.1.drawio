@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-09T16:04:49.154Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="fcbuQ9Ahs4Fb3hjxFHZG" version="21.2.9" type="github" pages="7">
+<mxfile host="app.diagrams.net" modified="2023-05-09T16:06:32.779Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="IY4kT_VKZtxSBfWEp1Ea" version="21.2.9" type="github" pages="7">
   <diagram name="Announcements and events" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="1434" dy="707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
@@ -2468,6 +2468,49 @@
         </mxCell>
         <mxCell id="FrlCNukLPi70X0tNBHE0-2" value="Κεντρικό&lt;br&gt;Μενού" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="930" y="270" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="zMcy3bDQCKr0mbsXNL2l-1" value="μαθήματα:class" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;dropTarget=0;collapsible=0;recursiveResize=0;outlineConnect=0;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};" vertex="1" parent="1">
+          <mxGeometry x="360" y="10" width="100" height="870" as="geometry" />
+        </mxCell>
+        <mxCell id="zMcy3bDQCKr0mbsXNL2l-2" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;outlineConnect=0;targetShapes=umlLifeline;portConstraint=eastwest;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;elbow&quot;:&quot;vertical&quot;,&quot;curved&quot;:0,&quot;rounded&quot;:0};fillColor=#f0a30a;fontColor=#000000;strokeColor=#BD7000;" vertex="1" parent="zMcy3bDQCKr0mbsXNL2l-1">
+          <mxGeometry x="45" y="340" width="10" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="zMcy3bDQCKr0mbsXNL2l-3" value="Επιλογή&lt;br&gt;μαθήματος" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="WwnvzanvyLX9TXncPYFx-2" target="WwnvzanvyLX9TXncPYFx-5">
+          <mxGeometry x="-0.0897" width="80" relative="1" as="geometry">
+            <mxPoint x="90" y="350" as="sourcePoint" />
+            <mxPoint x="170" y="350" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="165" y="350" />
+              <mxPoint x="155" y="370" />
+              <mxPoint x="130" y="350" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zMcy3bDQCKr0mbsXNL2l-4" value="αίτηση&lt;br&gt;μαθήματος" style="html=1;verticalAlign=bottom;endArrow=block;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;" edge="1" parent="1" source="WwnvzanvyLX9TXncPYFx-5" target="zMcy3bDQCKr0mbsXNL2l-2">
+          <mxGeometry x="-0.5714" width="80" relative="1" as="geometry">
+            <mxPoint x="210" y="370" as="sourcePoint" />
+            <mxPoint x="310" y="370" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="285" y="370" />
+              <mxPoint x="220" y="350" />
+            </Array>
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zMcy3bDQCKr0mbsXNL2l-5" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=vertical;curved=0;dashed=1;" edge="1" parent="1" source="zMcy3bDQCKr0mbsXNL2l-2" target="WwnvzanvyLX9TXncPYFx-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="410" as="sourcePoint" />
+            <mxPoint x="230" y="410" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="375" y="410" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zMcy3bDQCKr0mbsXNL2l-6" value="προσκόμιση μαθήματος" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zMcy3bDQCKr0mbsXNL2l-5">
+          <mxGeometry x="-0.2028" y="1" relative="1" as="geometry">
+            <mxPoint x="18" y="-11" as="offset" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
