@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-09T16:57:32.393Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="FliIGf0rGOUMofzlEbRx" version="21.2.9" type="github" pages="8">
+<mxfile host="app.diagrams.net" modified="2023-05-09T16:57:40.051Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36" etag="bSAEA0hssr4UrYNRgoHX" version="21.2.9" type="github" pages="8">
   <diagram name="Announcements and events" id="13e1069c-82ec-6db2-03f1-153e76fe0fe0">
     <mxGraphModel dx="1434" dy="707" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" background="none" math="0" shadow="0">
       <root>
@@ -3077,6 +3077,9 @@
         <mxCell id="24g8mgpcwbwy7NWLRTre-54" value="Επιλογή Ρυθμίσεις" style="text;html=1;strokeColor=none;fillColor=default;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="86.72" y="1190" width="60" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="24g8mgpcwbwy7NWLRTre-55" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=-90;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="-146.4" y="877.5" width="422.82" height="17.5" as="geometry" />
+        </mxCell>
         <mxCell id="24g8mgpcwbwy7NWLRTre-56" value="" style="rounded=0;whiteSpace=wrap;html=1;rotation=-90;fillColor=#f0a30a;strokeColor=#BD7000;fontColor=#000000;" vertex="1" parent="1">
           <mxGeometry x="-146.4" y="1425" width="422.82" height="17.5" as="geometry" />
         </mxCell>
@@ -3113,10 +3116,10 @@
             <mxPoint x="490.4" y="100" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="24g8mgpcwbwy7NWLRTre-65" value="κουμπί εισόοδου" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;entryX=0.586;entryY=1.111;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+        <mxCell id="24g8mgpcwbwy7NWLRTre-65" value="κουμπί εισόοδου" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;edgeStyle=elbowEdgeStyle;elbow=vertical;curved=0;rounded=0;entryX=0.586;entryY=1.111;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="24g8mgpcwbwy7NWLRTre-55">
           <mxGeometry x="0.063" relative="1" as="geometry">
             <mxPoint x="486.72" y="850.0000000000001" as="sourcePoint" />
-            <mxPoint x="75.7025000000001" y="849.8874800000001" as="targetPoint" />
+            <mxPoint x="380" y="850.0000000000001" as="targetPoint" />
             <mxPoint as="offset" />
             <Array as="points">
               <mxPoint x="380" y="850.0000000000001" />
