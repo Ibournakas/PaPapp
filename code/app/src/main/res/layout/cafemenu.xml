@@ -1,0 +1,177 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_cafe_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Menu selection spinner -->
+    <Spinner
+        android:id="@+id/menu_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="280dp"
+        android:layout_marginBottom="688dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/date_picker"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="216dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="676dp"
+        android:focusable="false"
+        android:longClickable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- Lunch menu -->
+    <LinearLayout
+        android:id="@+id/lunch_menu_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/dinner_menu_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/menu_spinner">
+
+        <TextView
+            android:id="@+id/lunch_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lunch_title"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/lunch_first_dish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first_dish" />
+
+        <TextView
+            android:id="@+id/lunch_main_course_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_course_1" />
+
+        <TextView
+            android:id="@+id/lunch_main_course_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_course_2" />
+
+        <TextView
+            android:id="@+id/lunch_side"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/side" />
+
+    </LinearLayout>
+    <!-- Launch Menu Recycler-->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lunch_menu_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:scrollbars="vertical"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/date_picker" />
+
+
+
+    <!-- Dinner menu -->
+    <LinearLayout
+        android:id="@+id/dinner_menu_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lunch_menu_layout">
+
+        <TextView
+            android:id="@+id/dinner_title"
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:text="@string/dinner_title" />
+
+        <TextView
+            android:id="@+id/dinner_first_dish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/first_dish" />
+
+        <TextView
+            android:id="@+id/dinner_main_course_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_course_1" />
+
+        <TextView
+            android:id="@+id/dinner_main_course_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/main_course_2" />
+
+        <TextView
+            android:id="@+id/dinner_side"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/side" />
+
+    </LinearLayout>
+    <!-- Dinner menu RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/dinner_menu_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:scrollbars="vertical"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dinner_menu_layout" />
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="46dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="202dp"
+        android:layout_marginBottom="692dp"
+        android:text="@string/date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

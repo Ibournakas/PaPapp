@@ -26,6 +26,13 @@
     <string name="coupons">Buy Coupons</string>
     <string name="waitingtime">Waiting Time</string>
     <string name="reviews">Reviews</string>
+    <string name="date">Date:</string>
+    <string name="lunch_title">Launch:</string>
+    <string name="first_dish">First Dish:</string>
+    <string name="main_course_1">Main Course 1:</string>
+    <string name="main_course_2">Main Course 2:</string>
+    <string name="side">Side Dishes:</string>
+    <string name="dinner_title">Dinner:</string>
     <string-array name="languages">
             <item>English</item>
             <item>Greek</item>
