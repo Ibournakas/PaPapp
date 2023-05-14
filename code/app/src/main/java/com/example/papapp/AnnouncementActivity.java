@@ -19,7 +19,7 @@ import java.util.List;
 
 public class AnnouncementActivity extends AppCompatActivity {
     private RecyclerView recyclerView;
-    private com.example.papapp.AnnouncementAdapter adapter;
+    private com.example.papapp.Announcement_Services.AnnouncementAdapter adapter;
     private ProgressBar mProgressBar;
     private SharedPreferences sharedPreferences;
 
@@ -65,12 +65,12 @@ public class AnnouncementActivity extends AppCompatActivity {
     private void loadAnnouncements(int page) {
         new FetchAnnouncementsTask().execute(page);
     }
-    private class FetchAnnouncementsTask extends AsyncTask<Integer, Void, List<com.example.papapp.Announcements>> {
+    private class FetchAnnouncementsTask extends AsyncTask<Integer, Void, List<com.example.papapp.Announcement_Services.Announcements>> {
         @Override
-        protected List<com.example.papapp.Announcements> doInBackground(Integer... integers) {
+        protected List<com.example.papapp.Announcement_Services.Announcements> doInBackground(Integer... integers) {
             int page = integers[0];
             try {
-                return com.example.papapp.AnnouncementFetcher.fetchAnnouncements(page);
+                return com.example.papapp.Announcement_Services.AnnouncementFetcher.fetchAnnouncements(page);
             } catch (IOException e) {
                 e.printStackTrace();
                 return new ArrayList<>();
@@ -78,8 +78,8 @@ public class AnnouncementActivity extends AppCompatActivity {
         }
 
         @Override
-        protected void onPostExecute(List<com.example.papapp.Announcements> announcements) {
-            adapter = new com.example.papapp.AnnouncementAdapter(announcements);
+        protected void onPostExecute(List<com.example.papapp.Announcement_Services.Announcements> announcements) {
+            adapter = new com.example.papapp.Announcement_Services.AnnouncementAdapter(announcements);
             recyclerView.setAdapter(adapter);
             mProgressBar.setVisibility(View.GONE);
 

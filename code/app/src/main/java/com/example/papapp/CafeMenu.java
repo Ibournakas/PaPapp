@@ -19,6 +19,6 @@ public class CafeMenu  extends AppCompatActivity {
             setTheme(R.style.Theme_Light);
         }
         setContentView(R.layout.cafeteria);
-        
+
     }
 }
