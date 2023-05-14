@@ -10,14 +10,14 @@
         android:layout_width="333dp"
         android:layout_height="86dp"
         android:adjustViewBounds="true"
-        android:background="@drawable/secondshape"
+        android:background="@drawable/foodshape"
         android:scaleType="fitStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499"
-        app:srcCompat="@drawable/bus" />
+        app:srcCompat="@drawable/food2" />
 
     <ImageButton
         android:id="@+id/card"
@@ -38,14 +38,14 @@
         android:layout_width="333dp"
         android:layout_height="86dp"
         android:adjustViewBounds="true"
-        android:background="@drawable/secondshape"
+        android:background="@drawable/clockshape"
         android:scaleType="fitStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.677"
-        app:srcCompat="@drawable/bus" />
+        app:srcCompat="@drawable/clock" />
 
     <ImageButton
         android:id="@+id/coupon"
@@ -66,14 +66,14 @@
         android:layout_width="333dp"
         android:layout_height="86dp"
         android:adjustViewBounds="true"
-        android:background="@drawable/secondshape"
+        android:background="@drawable/reviewsshape"
         android:scaleType="fitStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.86"
-        app:srcCompat="@drawable/bus" />
+        app:srcCompat="@drawable/reviews" />
 
     <TextView
         android:id="@+id/rationcard"
@@ -128,7 +128,7 @@
         android:layout_height="53dp"
         android:text="@string/waitingtime"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="19dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -144,7 +144,7 @@
         android:layout_height="53dp"
         android:text="@string/reviews"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/darkblue"
         android:textSize="19dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

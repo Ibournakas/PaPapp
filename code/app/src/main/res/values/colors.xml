@@ -15,7 +15,10 @@
     <color name="dark_100">#121212</color>
 
     <color name="greyblue">#bfcde3</color>
-
+    <color name="lightblue">#4aa8d4</color>
+    <color name="lightorange">#ffc757</color>
+    <color name="pink">#FBEAEB</color>
+    <color name="darkblue">#2F3C7E</color>
 
     <color name="primaryColor">#2196F3</color>
     <color name="primaryVariantColor">#1976D2</color>

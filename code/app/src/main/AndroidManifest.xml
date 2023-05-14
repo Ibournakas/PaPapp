@@ -26,9 +26,9 @@
             android:name=".CafeteriaActivity"
             android:exported="true" />
 
-<!--        <activity-->
-<!--            android:name=".Announcements"-->
-<!--            android:exported="true" />-->
+        <activity
+            android:name=".CafeMenu"
+            android:exported="true" />
 
         <activity
             android:name=".Settings"
