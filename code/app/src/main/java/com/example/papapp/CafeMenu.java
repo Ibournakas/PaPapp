@@ -2,9 +2,7 @@ package com.example.papapp;
 
 import android.graphics.Bitmap;
 import android.graphics.Matrix;
-import android.graphics.PointF;
 import android.graphics.pdf.PdfRenderer;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.ParcelFileDescriptor;
