@@ -14,6 +14,9 @@ import android.view.ScaleGestureDetector;
 import android.view.View;
 import android.widget.ImageView;
 
+import java.text.DateFormatSymbols;
+import java.util.Calendar;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import java.io.File;
@@ -102,9 +105,54 @@ public class CafeMenu extends AppCompatActivity {
 
 
         matrix = new Matrix();
+        Calendar calendar = Calendar.getInstance();
+        int month = calendar.get(Calendar.MONTH); // Note: January is represented by 0
+        String monthString = new DateFormatSymbols().getMonths()[month];
+        String greekMonth;
+        switch (monthString) {
+            case "January":
+                greekMonth = "ΙΑΝΟΥΑΡΙΟΣ";
+                break;
+            case "February":
+                greekMonth = "ΦΕΒΡΟΥΑΡΙΟΣ";
+                break;
+            case "March":
+                greekMonth = "ΜΑΡΤΙΟΣ";
+                break;
+            case "April":
+                greekMonth = "ΑΠΡΙΛΙΟΣ";
+                break;
+            case "May":
+                greekMonth = "ΜΑΪΟΣ";
+                break;
+            case "June":
+                greekMonth = "ΙΟΥΝΙΟΣ";
+                break;
+            case "July":
+                greekMonth = "ΙΟΥΛΙΟΣ";
+                break;
+            case "August":
+                greekMonth = "ΑΥΓΟΥΣΤΟΣ";
+                break;
+            case "September":
+                greekMonth = "ΣΕΠΤΕΜΒΡΙΟΣ";
+                break;
+            case "October":
+                greekMonth = "ΟΚΤΩΒΡΙΟΣ";
+                break;
+            case "November":
+                greekMonth = "ΝΟΕΜΒΡΙΟΣ";
+                break;
+            case "December":
+                greekMonth = "ΔΕΚΕΜΒΡΙΟΣ";
+                break;
+            default:
+                greekMonth = "";
+        }
+        String menuUrl = "https://www.upatras.gr/wp-content/uploads/2023/04/ΠΡΟΓΡΑΜΜΑ-ΣΙΤΙΣΗΣ-" + greekMonth.toUpperCase() + "-2023_compressed.pdf";
         
 
-        new DownloadPdfTask().execute("https://www.upatras.gr/wp-content/uploads/2023/04/ΠΡΟΓΡΑΜΜΑ-ΣΙΤΙΣΗΣ-ΜΑΪΟΣ-2023_compressed.pdf");
+        new DownloadPdfTask().execute(menuUrl);
     }
 
     private class DownloadPdfTask extends AsyncTask<String, Void, File> {
