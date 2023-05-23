@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-23T19:38:22.870Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="o2IGpBiTcxt7ILOMIWDJ" version="21.3.3" type="github" pages="17">
+<mxfile host="app.diagrams.net" modified="2023-05-23T19:44:01.519Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="P1wmS_-okYhccNAmx9It" version="21.3.3" type="github" pages="17">
   <diagram name="Robustness v0.1" id="MVgVls76WPpNq6Cu12q4">
     <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
@@ -4043,7 +4043,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="3hRUR0KOHAB4w6sUHAgS" name="Change username / Change email">
-    <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -4146,14 +4146,14 @@
         <mxCell id="GcuLzEUFY1s-UnH01Fbp-5" value="&lt;font face=&quot;Verdana&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Αποθήκευσε&lt;br&gt;&lt;/span&gt;&lt;/font&gt;" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="458" y="380" width="70" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="GcuLzEUFY1s-UnH01Fbp-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GcuLzEUFY1s-UnH01Fbp-6" target="GcuLzEUFY1s-UnH01Fbp-32" edge="1">
+        <mxCell id="GcuLzEUFY1s-UnH01Fbp-33" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GcuLzEUFY1s-UnH01Fbp-6" target="GcuLzEUFY1s-UnH01Fbp-32" edge="1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="603" y="520" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="GcuLzEUFY1s-UnH01Fbp-34" value="αποδοχή" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="GcuLzEUFY1s-UnH01Fbp-33" vertex="1" connectable="0">
+        <mxCell id="GcuLzEUFY1s-UnH01Fbp-34" value="αποδοχή" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;" parent="GcuLzEUFY1s-UnH01Fbp-33" vertex="1" connectable="0">
           <mxGeometry x="-0.0884" y="1" relative="1" as="geometry">
             <mxPoint x="10" y="-21" as="offset" />
           </mxGeometry>
@@ -4191,14 +4191,14 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="0KASYhaCbnolWk2sHClp-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="GcuLzEUFY1s-UnH01Fbp-12" target="0KASYhaCbnolWk2sHClp-1">
+        <mxCell id="0KASYhaCbnolWk2sHClp-2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="GcuLzEUFY1s-UnH01Fbp-12" target="0KASYhaCbnolWk2sHClp-1">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
               <mxPoint x="120" y="710" />
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="0KASYhaCbnolWk2sHClp-5" value="ξεπερασμένο όριο ειδοποιήσεων" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="0KASYhaCbnolWk2sHClp-2">
+        <mxCell id="0KASYhaCbnolWk2sHClp-5" value="ξεπερασμένο όριο ειδοποιήσεων" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;" vertex="1" connectable="0" parent="0KASYhaCbnolWk2sHClp-2">
           <mxGeometry x="0.0563" y="-4" relative="1" as="geometry">
             <mxPoint y="-14" as="offset" />
           </mxGeometry>
@@ -4221,10 +4221,10 @@
             <mxPoint x="-40" y="9" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="Hum3RWVVj4VPxWR_0_My-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" source="GcuLzEUFY1s-UnH01Fbp-17" target="GcuLzEUFY1s-UnH01Fbp-12" edge="1">
+        <mxCell id="Hum3RWVVj4VPxWR_0_My-5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" source="GcuLzEUFY1s-UnH01Fbp-17" target="GcuLzEUFY1s-UnH01Fbp-12" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Hum3RWVVj4VPxWR_0_My-6" value="τα στοιχεία υπάρχουν σε άλλο χρήστη" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="Hum3RWVVj4VPxWR_0_My-5" vertex="1" connectable="0">
+        <mxCell id="Hum3RWVVj4VPxWR_0_My-6" value="τα στοιχεία υπάρχουν σε άλλο χρήστη" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;" parent="Hum3RWVVj4VPxWR_0_My-5" vertex="1" connectable="0">
           <mxGeometry x="-0.2396" y="1" relative="1" as="geometry">
             <mxPoint x="-29" y="-1" as="offset" />
           </mxGeometry>
@@ -4232,7 +4232,7 @@
         <mxCell id="GcuLzEUFY1s-UnH01Fbp-17" value="&lt;font face=&quot;Verdana&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Εμφάνισε&lt;br&gt;&lt;/span&gt;&lt;/font&gt;" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
           <mxGeometry x="439.5" y="570" width="70" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="GcuLzEUFY1s-UnH01Fbp-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GcuLzEUFY1s-UnH01Fbp-32" target="GcuLzEUFY1s-UnH01Fbp-35" edge="1">
+        <mxCell id="GcuLzEUFY1s-UnH01Fbp-40" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="GcuLzEUFY1s-UnH01Fbp-32" target="GcuLzEUFY1s-UnH01Fbp-35" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="GcuLzEUFY1s-UnH01Fbp-32" value="&lt;font face=&quot;Verdana&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Εμφάνισε&lt;br&gt;&lt;/span&gt;&lt;/font&gt;" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
@@ -4241,7 +4241,7 @@
         <mxCell id="GcuLzEUFY1s-UnH01Fbp-35" value="&lt;font face=&quot;Verdana&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Μήνυμα Επιτυχίας&lt;/span&gt;&lt;/font&gt;" style="shape=umlBoundary;whiteSpace=wrap;html=1;rounded=1;" parent="1" vertex="1">
           <mxGeometry x="210" y="480" width="100" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="GcuLzEUFY1s-UnH01Fbp-39" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" edge="1">
+        <mxCell id="GcuLzEUFY1s-UnH01Fbp-39" value="" style="endArrow=classic;html=1;rounded=1;" parent="1" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="210" y="520" as="sourcePoint" />
             <mxPoint x="150" y="123" as="targetPoint" />
@@ -4251,12 +4251,12 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="Hum3RWVVj4VPxWR_0_My-2" value="επιλογή&lt;br&gt;επιστροφής" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="GcuLzEUFY1s-UnH01Fbp-39" vertex="1" connectable="0">
+        <mxCell id="Hum3RWVVj4VPxWR_0_My-2" value="επιλογή&lt;br&gt;επιστροφής" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rounded=1;" parent="GcuLzEUFY1s-UnH01Fbp-39" vertex="1" connectable="0">
           <mxGeometry x="0.3552" y="-4" relative="1" as="geometry">
             <mxPoint x="46" y="265" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="0KASYhaCbnolWk2sHClp-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="0KASYhaCbnolWk2sHClp-1" target="0KASYhaCbnolWk2sHClp-3">
+        <mxCell id="0KASYhaCbnolWk2sHClp-4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=1;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#f8cecc;strokeColor=#b85450;" edge="1" parent="1" source="0KASYhaCbnolWk2sHClp-1" target="0KASYhaCbnolWk2sHClp-3">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="0KASYhaCbnolWk2sHClp-1" value="&lt;font face=&quot;Verdana&quot;&gt;&lt;span style=&quot;font-size: 10px;&quot;&gt;Εμφάνισε&lt;br&gt;&lt;/span&gt;&lt;/font&gt;" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;rounded=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
@@ -4269,7 +4269,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="3bkyZhqWftjiZLuQbCuv" name="Train schedule / Bus schedule">
-    <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="819" dy="437" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -4357,11 +4357,12 @@
             <mxPoint x="220" y="370" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="44aaLYBFCFKyXHxL9plT-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="44aaLYBFCFKyXHxL9plT-19">
+        <mxCell id="44aaLYBFCFKyXHxL9plT-58" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.029;entryY=0.513;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="44aaLYBFCFKyXHxL9plT-19" target="44aaLYBFCFKyXHxL9plT-59">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="440" y="570" as="targetPoint" />
             <Array as="points">
-              <mxPoint x="373" y="570" />
+              <mxPoint x="40" y="500" />
+              <mxPoint x="40" y="611" />
             </Array>
           </mxGeometry>
         </mxCell>
@@ -4403,13 +4404,24 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="44aaLYBFCFKyXHxL9plT-55" value="Χρόνος Αναμονής" style="shape=umlBoundary;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="560" y="530" width="100" height="80" as="geometry" />
+          <mxGeometry x="238" y="570" width="100" height="80" as="geometry" />
         </mxCell>
         <mxCell id="44aaLYBFCFKyXHxL9plT-60" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="44aaLYBFCFKyXHxL9plT-59" target="44aaLYBFCFKyXHxL9plT-55">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="44aaLYBFCFKyXHxL9plT-59" value="Εμφάνισε" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
-          <mxGeometry x="440" y="530" width="70" height="80" as="geometry" />
+          <mxGeometry x="110" y="570" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="44aaLYBFCFKyXHxL9plT-61" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.551;entryY=0.003;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="44aaLYBFCFKyXHxL9plT-55">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="50" y="70" as="sourcePoint" />
+            <mxPoint x="290" y="560" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="50" y="70" />
+              <mxPoint x="60" y="70" />
+              <mxPoint x="60" y="470" />
+            </Array>
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
