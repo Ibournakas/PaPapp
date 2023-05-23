@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-05-23T17:10:43.638Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="mlMxhhtXwCVLCOPY_GyC" version="21.3.3" type="github" pages="15">
+<mxfile host="app.diagrams.net" modified="2023-05-23T17:11:17.548Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36" etag="yrvsfActpkcy0I-0Wv1K" version="21.3.3" type="github" pages="15">
   <diagram name="Robustness v0.1" id="MVgVls76WPpNq6Cu12q4">
     <mxGraphModel dx="1434" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="1">
       <root>
@@ -2833,7 +2833,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="yoL7P4IeyiL9WT8x2mCV-14" value="Διαχείριση και αξιολόγηση δανεισμένων συγγραμμάτων" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;rounded=1;" parent="1" connectable="0" vertex="1">
-          <mxGeometry x="338.0012867173075" y="279.9995994116913" as="geometry">
+          <mxGeometry x="338.0012867173075" y="289.9995994116913" as="geometry">
             <mxPoint x="2" y="-3" as="offset" />
           </mxGeometry>
         </mxCell>
@@ -2976,11 +2976,6 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="vZeuICTMbpo-mGfER86Z-26" value="επιλογή επιστροφής" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;rounded=1;" parent="1" connectable="0" vertex="1">
-          <mxGeometry x="480.0012867173075" y="249.9995994116913" as="geometry">
-            <mxPoint x="2" y="-3" as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="vZeuICTMbpo-mGfER86Z-27" value="&lt;font size=&quot;1&quot;&gt;Εμφάνισε&lt;/font&gt;" style="ellipse;shape=umlControl;whiteSpace=wrap;html=1;rounded=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
           <mxGeometry x="45" y="585" width="70" height="80" as="geometry" />
         </mxCell>
@@ -3079,7 +3074,7 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="vZeuICTMbpo-mGfER86Z-63" value="όχι" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;rounded=1;" parent="1" connectable="0" vertex="1">
-          <mxGeometry x="520.0012867173075" y="459.9995994116913" as="geometry">
+          <mxGeometry x="520.0012867173075" y="449.9995994116913" as="geometry">
             <mxPoint x="6" y="-2" as="offset" />
           </mxGeometry>
         </mxCell>
