@@ -138,11 +138,11 @@ public class Settings extends AppCompatActivity {
         logout.setOnClickListener(view -> {
                 // Clear any user authentication data (e.g. session, token, etc.)
                 SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.remove("email");
-                editor.remove("password");
+//                editor.remove("email");
+//                editor.remove("password");
                 editor.remove("rememberMe");
                 editor.remove("loggedIn");
-                editor.remove("username");
+//                editor.remove("username");
                 editor.putBoolean("isDarkModeOn", switchCompat.isChecked());
                 editor.putString("language",languageSelected);
                 editor.apply();

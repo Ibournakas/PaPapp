@@ -74,6 +74,8 @@ public class Profile extends AppCompatActivity {
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putString("email", newEmail);
                 editor.apply();
+                Toast.makeText(this, sharedPreferences.getString("email", ""), Toast.LENGTH_SHORT).show();
+
                 Toast.makeText(this, "Email updated successfully", Toast.LENGTH_SHORT).show();
             } else {
                 Toast.makeText(this, "Please enter a valid email", Toast.LENGTH_SHORT).show();

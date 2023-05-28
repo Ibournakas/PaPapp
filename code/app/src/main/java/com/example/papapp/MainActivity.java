@@ -53,7 +53,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences("MyPrefs",MODE_PRIVATE);
+
         if (sharedPreferences.getBoolean("isDarkModeOn",false)) {
             setTheme(R.style.Theme_Dark);
         }
@@ -103,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
         mLoginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SharedPreferences sharedPreferences = getSharedPreferences("myPrefs", MODE_PRIVATE);
+                 sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
                 // Get user input
                 String email = mEmailEditText.getText().toString().trim();
                 String password = mPasswordEditText.getText().toString().trim();
@@ -118,9 +119,11 @@ public class MainActivity extends AppCompatActivity {
                     mPasswordEditText.setError("Password is required");
                     return;
                 }
+               //Toast.makeText(MainActivity.this, sharedPreferences.getString("email", ""), Toast.LENGTH_SHORT).show();
+//                Toast.makeText(Profile.this, sharedPreferences.getString("email", ""), Toast.LENGTH_SHORT).show();
 
                 // Authenticate user
-                if (email.equals("admin") && password.equals("admin")) {
+                if (email.equals(sharedPreferences.getString("email", "")) && password.equals(sharedPreferences.getString("password", ""))) {
                     // Login successful
                     Toast.makeText(MainActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
                     // Check if remember me checkbox is checked
@@ -128,13 +131,13 @@ public class MainActivity extends AppCompatActivity {
                     boolean loggedIn =true;
 
                     SharedPreferences.Editor editor = getSharedPreferences("MyPrefs", MODE_PRIVATE).edit();
-                    editor.putString("email", email);
-                    editor.putString("password", password);
+//                    editor.putString("email", email);
+//                    editor.putString("password", password);
                     editor.putBoolean("rememberMe", rememberMe);
                     editor.putBoolean("loggedIn", loggedIn);
                     editor.apply();
 
-                    //Toast.makeText(MainActivity.this, sharedPreferences.getString("email", ""), Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(MainActivity.this, sharedPreferences.getString("email", ""), Toast.LENGTH_SHORT).show();
 
                     // Start main activity
                     Intent intent = new Intent(MainActivity.this, HomeActivity.class);
