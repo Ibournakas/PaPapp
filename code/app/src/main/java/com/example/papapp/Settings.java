@@ -142,6 +142,7 @@ public class Settings extends AppCompatActivity {
                 editor.remove("password");
                 editor.remove("rememberMe");
                 editor.remove("loggedIn");
+                editor.remove("username");
                 editor.putBoolean("isDarkModeOn", switchCompat.isChecked());
                 editor.putString("language",languageSelected);
                 editor.apply();

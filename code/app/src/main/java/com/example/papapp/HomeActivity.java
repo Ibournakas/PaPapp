@@ -46,9 +46,29 @@ public class HomeActivity extends AppCompatActivity {
         SharedPreferences sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
 
         String login_name = sharedPreferences.getString("email", "");
-        String username = String.format(getString(R.string.username1), login_name);
+        String savedUsername = sharedPreferences.getString("username", "");
+
+        String username;
+        if (savedUsername != null && !savedUsername.isEmpty()) {
+            // Use the existing saved username
+            username = savedUsername;
+        } else {
+            // Extract the username from the email
+            if (login_name.contains("@")) {
+                username = login_name.substring(0, login_name.indexOf("@"));
+            } else {
+                username = login_name;
+            }
+            // Save the username in SharedPreferences
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putString("username", username);
+            editor.apply();
+        }
+
+        String formattedUsername = String.format(getString(R.string.username1), username);
         TextView myTextView = findViewById(R.id.textView);
-        myTextView.setText(username);
+        myTextView.setText(formattedUsername);
+
 
 
         Button settingsButton = findViewById(R.id.settingsButton);
