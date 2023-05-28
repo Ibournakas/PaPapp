@@ -5,54 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/button10"
-        android:layout_width="163dp"
-        android:layout_height="66dp"
-        android:text="@string/language"
-        android:textStyle="bold"
-        android:textColor="@color/logo2"
-        android:background="@drawable/firstshape"
-        android:scaleType="fitEnd"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.447"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.607" />
-
-    <Button
-        android:id="@+id/button9"
-        android:layout_width="163dp"
-        android:layout_height="66dp"
-        android:text="@string/dark"
-        android:textStyle="bold"
-        android:textColor="@color/logo2"
-        android:background="@drawable/firstshape"
-        android:scaleType="fitEnd"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.447"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.448" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="163dp"
-        android:layout_height="66dp"
-        android:text="Button"
-        android:textStyle="bold"
-        android:textColor="@color/logo2"
-        android:background="@drawable/firstshape"
-        android:scaleType="fitEnd"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.447"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.297" />
-
     <TextView
         android:id="@+id/textView11"
         android:layout_width="297dp"
@@ -86,17 +38,74 @@
         android:id="@+id/button2"
         android:layout_width="163dp"
         android:layout_height="66dp"
+        android:background="@drawable/firstshape"
+        android:scaleType="fitEnd"
         android:text="@string/logout"
         android:textColor="@color/logo2"
-        android:background="@drawable/firstshape"
         android:textStyle="bold"
-        android:scaleType="fitEnd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.297" />
+        app:layout_constraintVertical_bias="0.212" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="163dp"
+        android:layout_height="66dp"
+        android:background="@drawable/firstshape"
+        android:scaleType="fitEnd"
+        android:text="@string/dark"
+        android:textColor="@color/logo2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.35" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch2"
+        android:layout_width="58dp"
+        android:layout_height="31dp"
+        android:switchMinWidth="40dp"
+        android:switchPadding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.841"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.355" />
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="163dp"
+        android:layout_height="66dp"
+        android:background="@drawable/firstshape"
+        android:scaleType="fitEnd"
+        android:text="@string/language"
+        android:textColor="@color/logo2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="113dp"
+        android:layout_height="34dp"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.49" />
 
     <ImageButton
         android:id="@+id/imageButton6"
@@ -107,10 +116,10 @@
         android:scaleType="fitEnd"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintHorizontal_bias="0.479"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.765"
+        app:layout_constraintVertical_bias="0.636"
         app:srcCompat="@drawable/sound_5" />
 
     <TextView
@@ -123,10 +132,42 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.762" />
+        app:layout_constraintVertical_bias="0.638" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="163dp"
+        android:layout_height="66dp"
+        android:background="@drawable/firstshape"
+        android:scaleType="fitEnd"
+        android:text="@string/Points"
+        android:textColor="@color/logo2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.783" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="163dp"
+        android:layout_height="66dp"
+        android:background="@drawable/firstshape"
+        android:scaleType="fitEnd"
+        android:text="@string/findUser"
+        android:textColor="@color/logo2"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.479"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.918" />
 
     <Switch
         android:id="@+id/switch1"
@@ -137,34 +178,9 @@
         android:switchPadding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.798"
+        app:layout_constraintHorizontal_bias="0.835"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.752" />
-
-    <androidx.appcompat.widget.SwitchCompat
-        android:id="@+id/switch2"
-        android:layout_width="58dp"
-        android:layout_height="31dp"
-        android:switchMinWidth="40dp"
-        android:switchPadding="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.818"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.448" />
-
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="113dp"
-        android:layout_height="34dp"
-        android:spinnerMode="dropdown"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.976"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.593" />
+        app:layout_constraintVertical_bias="0.63" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
