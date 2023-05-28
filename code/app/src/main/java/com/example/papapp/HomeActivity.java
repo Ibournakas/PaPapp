@@ -59,6 +59,14 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        Button  profile = findViewById(R.id.userButton);
+        profile.setOnClickListener(view -> {
+
+            Intent intent = new Intent( this, Profile.class);
+
+            startActivity(intent);
+        });
+
 
         ImageButton announcements = findViewById(R.id.imageButton5);
         announcements.setOnClickListener(view -> {
