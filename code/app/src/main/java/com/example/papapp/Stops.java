@@ -1,13 +1,14 @@
 package com.example.papapp;
 
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
+import com.github.chrisbanes.photoview.PhotoView;
+import com.example.papapp.ZoomableImageView;
 
-public class PublicTransport extends AppCompatActivity {
+
+public class Stops extends AppCompatActivity {
     private SharedPreferences sharedPreferences;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,15 +18,11 @@ public class PublicTransport extends AppCompatActivity {
         } else {
             setTheme(R.style.Theme_Light);
         }
-        setContentView(R.layout.transport);
-        ImageButton stops = findViewById(R.id.stops);
-        stops.setOnClickListener(view -> {
+        setContentView(R.layout.stops);
 
-            Intent intent = new Intent( this, Stops.class);
 
-            startActivity(intent);
-        });
-
+        ZoomableImageView zoomableImageView = findViewById(R.id.zoomableImageView);
 
     }
+
 }

@@ -28,6 +28,10 @@
         <activity
             android:name=".PublicTransport"
             android:exported="true" />
+
+        <activity
+            android:name=".Stops"
+            android:exported="true" />
         <activity
             android:name=".Profile"
             android:exported="true" />

@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Stops">
+
+    <com.example.papapp.ZoomableImageView
+        android:id="@+id/zoomableImageView"
+        android:layout_width="1415dp"
+        android:layout_height="919dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/uni_map" />
+
+</LinearLayout>
+
