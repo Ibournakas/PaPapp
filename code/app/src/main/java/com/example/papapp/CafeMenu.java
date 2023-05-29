@@ -1,6 +1,7 @@
 package com.example.papapp;
 
 import android.graphics.Bitmap;
+import android.graphics.Canvas;
 import android.graphics.Matrix;
 import android.graphics.pdf.PdfRenderer;
 import android.os.AsyncTask;
@@ -206,27 +207,40 @@ public class CafeMenu extends AppCompatActivity {
         try (ParcelFileDescriptor parcelFileDescriptor = ParcelFileDescriptor.open(file, ParcelFileDescriptor.MODE_READ_ONLY)) {
             if (parcelFileDescriptor != null) {
                 PdfRenderer pdfRenderer = new PdfRenderer(parcelFileDescriptor);
-                PdfRenderer.Page page = pdfRenderer.openPage(0);
+
+                int pageCount = pdfRenderer.getPageCount();
 
                 DisplayMetrics displayMetrics = new DisplayMetrics();
                 getWindowManager().getDefaultDisplay().getMetrics(displayMetrics);
                 int displayWidth = displayMetrics.widthPixels;
                 int displayHeight = displayMetrics.heightPixels;
 
-                float scale = Math.min((float) displayWidth / page.getWidth(), (float) displayHeight / page.getHeight());
-                int scaledWidth = Math.round(scale * page.getWidth());
-                int scaledHeight = Math.round(scale * page.getHeight());
+                Bitmap bitmap = Bitmap.createBitmap(displayWidth, displayHeight, Bitmap.Config.ARGB_8888);
+                Canvas canvas = new Canvas(bitmap);
 
-                Bitmap bitmap = Bitmap.createBitmap(scaledWidth, scaledHeight, Bitmap.Config.ARGB_8888);
-                page.render(bitmap, null, null, PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY);
-                pdfImageView.setImageBitmap(bitmap);
+                for (int pageIndex = 0; pageIndex < pageCount; pageIndex++) {
+                    PdfRenderer.Page page = pdfRenderer.openPage(pageIndex);
 
-                page.close();
+                    float scale = Math.min((float) displayWidth / page.getWidth(), (float) displayHeight / page.getHeight());
+                    int scaledWidth = Math.round(scale * page.getWidth());
+                    int scaledHeight = Math.round(scale * page.getHeight());
+
+                    Bitmap pageBitmap = Bitmap.createBitmap(scaledWidth, scaledHeight, Bitmap.Config.ARGB_8888);
+                    page.render(pageBitmap, null, null, PdfRenderer.Page.RENDER_MODE_FOR_DISPLAY);
+
+                    canvas.drawBitmap(pageBitmap, 0, pageIndex * scaledHeight, null);
+
+                    page.close();
+                }
+
                 pdfRenderer.close();
+
+                pdfImageView.setImageBitmap(bitmap);
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
+
     }
     private class ScaleGestureListener extends ScaleGestureDetector.SimpleOnScaleGestureListener {
         @Override
@@ -264,122 +278,4 @@ public class CafeMenu extends AppCompatActivity {
         }
 
     }
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//package com.example.papapp;
-//
-//import androidx.appcompat.app.AppCompatActivity;
-//
-//import android.app.DatePickerDialog;
-//import android.content.Intent;
-//import android.content.SharedPreferences;
-//import android.os.AsyncTask;
-//import android.os.Bundle;
-//import android.util.Log;
-//import android.widget.ArrayAdapter;
-//import android.widget.EditText;
-//import android.widget.ImageButton;
-//import android.widget.Spinner;
-//import android.widget.TextView;
-//import android.widget.Toast;
-//
-//import androidx.appcompat.app.AppCompatActivity;
-//
-//import com.example.papapp.Announcement_Services.Announcements;
-//
-//import java.io.IOException;
-//import java.text.SimpleDateFormat;
-//import java.util.ArrayList;
-//import java.util.Calendar;
-//import java.util.List;
-//import java.util.Locale;
-//
-//import com.github.barteksc.pdfviewer.PDFView;
-//
-//public class CafeMenu  extends AppCompatActivity {
-//    private SharedPreferences sharedPreferences;
-//    final Calendar myCalendar= Calendar.getInstance();
-//    private EditText dateText;
-//    private String monthName;
-//    private String dayName;
-//
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
-//        if (sharedPreferences.getBoolean("isDarkModeOn", false)) {
-//            setTheme(R.style.Theme_Dark);
-//        } else {
-//            setTheme(R.style.Theme_Light);
-//        }
-//        setContentView(R.layout.cafemenu);
-//
-//        DatePickerDialog.OnDateSetListener datePickerListener = (view, year, month, dayOfMonth) -> {
-//            myCalendar.set(Calendar.YEAR, year);
-//            myCalendar.set(Calendar.MONTH,month);
-//            myCalendar.set(Calendar.DAY_OF_MONTH,dayOfMonth);
-//            try {
-//                updateDateLabel();
-//            } catch (IOException e) {
-//                throw new RuntimeException(e);
-//            }
-//
-////            Log.d("CafeMenu", "Selected day name: " + dayName);
-////
-////            // use dayStr and monthStr variables as required
-////            Log.d("CafeMenu", "Selected month: " + monthName);
-//        };
-//
-//
-//        dateText = findViewById(R.id.date_picker);
-//        dateText.setOnClickListener(v -> new DatePickerDialog(CafeMenu.this,datePickerListener,myCalendar.get(Calendar.YEAR),myCalendar.get(Calendar.MONTH),myCalendar.get(Calendar.DAY_OF_MONTH)).show());
-//
-//        Spinner spinner = findViewById(R.id.menu_spinner);
-//        String[] options = {"Day", "Week"};
-//        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, options);
-//        spinner.setAdapter(adapter);
-//        spinner.setSelection(0); // Set "Day" as the default selection
-//
-//
-//
-//
-//
-//    }
-//    private void updateDateLabel() throws IOException {
-//        if(dateText.getError() != null){
-//            dateText.setError(null);
-//        }
-//        String myFormat="dd-MM-yy";
-//        SimpleDateFormat dateFormat=new SimpleDateFormat(myFormat, Locale.getDefault());
-//        dateText.setText(dateFormat.format(myCalendar.getTime()));
-//
-//        SimpleDateFormat monthFormat = new SimpleDateFormat("MMMM", Locale.getDefault());
-//        monthName = monthFormat.format(myCalendar.getTime());
-//        SimpleDateFormat dayFormat = new SimpleDateFormat("EEEE", Locale.getDefault());
-//        dayName = dayFormat.format(myCalendar.getTime());
-//        MenuFetcher menuFetcher = new MenuFetcher(monthName);
-//        menuFetcher.execute(); // pass the monthName as an argument to the execute method
-//
-//    }
-//
-//}
-//
-//

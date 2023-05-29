@@ -37,6 +37,11 @@
     <string name="findUser">Find User</string>
     <string name="Profile">Profile</string>
     <string name="email">Email:</string>
+    <string name="waitingtimeanddelay">Waiting Time and Delays</string>
+    <string name="ptannouncements">P.T Announcements</string>
+    <string name="stop">Show Stops</string>
+    <string name="bussched">Bus Schedule</string>
+    <string name="trainsched">Train Schedule</string>
     <string-array name="languages">
             <item>English</item>
             <item>Greek</item>

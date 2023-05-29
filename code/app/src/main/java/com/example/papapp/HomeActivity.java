@@ -103,6 +103,12 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
+        ImageButton transport = findViewById(R.id.imageButton3);
+        transport.setOnClickListener(view -> {
+
+            Intent intent= new Intent(this, PublicTransport.class);
+            startActivity(intent);
+        });
         
 
 
