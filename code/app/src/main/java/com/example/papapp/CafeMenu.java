@@ -106,6 +106,7 @@ public class CafeMenu extends AppCompatActivity {
 
 
         matrix = new Matrix();
+        String numMonth="";
         Calendar calendar = Calendar.getInstance();
         int month = calendar.get(Calendar.MONTH); // Note: January is represented by 0
         String monthString = new DateFormatSymbols().getMonths()[month];
@@ -113,47 +114,62 @@ public class CafeMenu extends AppCompatActivity {
         switch (monthString) {
             case "January":
                 greekMonth = "ΙΑΝΟΥΑΡΙΟΣ";
+                numMonth="01";
                 break;
             case "February":
                 greekMonth = "ΦΕΒΡΟΥΑΡΙΟΣ";
+                numMonth="02";
                 break;
             case "March":
                 greekMonth = "ΜΑΡΤΙΟΣ";
+                numMonth="02";
                 break;
             case "April":
                 greekMonth = "ΑΠΡΙΛΙΟΣ";
+                numMonth="03";
                 break;
             case "May":
                 greekMonth = "ΜΑΪΟΣ";
+                numMonth="04";
                 break;
             case "June":
                 greekMonth = "ΙΟΥΝΙΟΣ";
+                numMonth="05";
                 break;
             case "July":
                 greekMonth = "ΙΟΥΛΙΟΣ";
+                numMonth="06";
                 break;
             case "August":
                 greekMonth = "ΑΥΓΟΥΣΤΟΣ";
+                numMonth="07";
                 break;
             case "September":
                 greekMonth = "ΣΕΠΤΕΜΒΡΙΟΣ";
+                numMonth="08";
                 break;
             case "October":
                 greekMonth = "ΟΚΤΩΒΡΙΟΣ";
+                numMonth="09";
                 break;
             case "November":
                 greekMonth = "ΝΟΕΜΒΡΙΟΣ";
+                numMonth="10";
                 break;
             case "December":
                 greekMonth = "ΔΕΚΕΜΒΡΙΟΣ";
+                numMonth="11";
                 break;
             default:
                 greekMonth = "";
         }
-        String menuUrl = "https://www.upatras.gr/wp-content/uploads/2023/04/ΠΡΟΓΡΑΜΜΑ-ΣΙΤΙΣΗΣ-" + greekMonth.toUpperCase() + "-2023_compressed.pdf";
-        
+        String menuUrl = "https://www.upatras.gr/wp-content/uploads/2023/"+numMonth+"/ΠΡΟΓΡΑΜΜΑ-ΣΙΤΙΣΗΣ-" + greekMonth.toUpperCase() + "-2023_compressed.pdf";
+        String menuUrl_alt = "https://www.upatras.gr/wp-content/uploads/2023/"+numMonth+"/ΠΡΟΓΡΑΜΜΑ-ΣΙΤΙΣΗΣ-" + greekMonth.toUpperCase() + "-2023-Φ.Ε.Π._compressed.pdf";
+
 
         new DownloadPdfTask().execute(menuUrl);
+        new DownloadPdfTask().execute(menuUrl_alt);
+
     }
 
     private class DownloadPdfTask extends AsyncTask<String, Void, File> {
