@@ -121,7 +121,11 @@ public class MainActivity extends AppCompatActivity {
                 }
                //Toast.makeText(MainActivity.this, sharedPreferences.getString("email", ""), Toast.LENGTH_SHORT).show();
 //                Toast.makeText(Profile.this, sharedPreferences.getString("email", ""), Toast.LENGTH_SHORT).show();
-
+                if(sharedPreferences.getString("email", "").isEmpty() || sharedPreferences.getString("password", "").isEmpty()){
+                    SharedPreferences.Editor editor = getSharedPreferences("MyPrefs", MODE_PRIVATE).edit();
+                    editor.putString("email", "admin");
+                    editor.putString("password", "admin");
+                }
                 // Authenticate user
                 if (email.equals(sharedPreferences.getString("email", "")) && password.equals(sharedPreferences.getString("password", ""))) {
                     // Login successful
