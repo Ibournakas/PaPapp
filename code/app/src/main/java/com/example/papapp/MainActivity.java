@@ -125,6 +125,7 @@ public class MainActivity extends AppCompatActivity {
                     SharedPreferences.Editor editor = getSharedPreferences("MyPrefs", MODE_PRIVATE).edit();
                     editor.putString("email", "admin");
                     editor.putString("password", "admin");
+                    editor.apply();
                 }
                 // Authenticate user
                 if (email.equals(sharedPreferences.getString("email", "")) && password.equals(sharedPreferences.getString("password", ""))) {
