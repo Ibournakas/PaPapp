@@ -8,9 +8,6 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 
-
-
-
 public class CafeteriaActivity extends AppCompatActivity {
     private SharedPreferences sharedPreferences;
 

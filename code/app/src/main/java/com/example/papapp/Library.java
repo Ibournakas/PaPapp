@@ -1,13 +1,11 @@
 package com.example.papapp;
 
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class PublicTransport extends AppCompatActivity {
+public class Library extends AppCompatActivity {
     private SharedPreferences sharedPreferences;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,12 +16,6 @@ public class PublicTransport extends AppCompatActivity {
             setTheme(R.style.Theme_Light);
         }
         setContentView(R.layout.transport);
-        ImageButton stops = findViewById(R.id.stops);
-        stops.setOnClickListener(view -> {
 
-            Intent intent = new Intent( this, Stops.class);
-
-            startActivity(intent);
-        });
     }
 }
