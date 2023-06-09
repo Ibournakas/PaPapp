@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -15,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class HomeActivity extends AppCompatActivity {
     private boolean doubleBackToExitPressedOnce = false;
+    private Button manageRateButton;
     private SharedPreferences sharedPreferences;
     @Override
     public void onBackPressed() {
@@ -34,6 +34,7 @@ public class HomeActivity extends AppCompatActivity {
             }
         }, 2000);
     }
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
@@ -66,11 +67,10 @@ public class HomeActivity extends AppCompatActivity {
             editor.apply();
         }
 
+
         String formattedUsername = String.format(getString(R.string.username1), username);
         TextView myTextView = findViewById(R.id.textView);
         myTextView.setText(formattedUsername);
-
-
 
         Button settingsButton = findViewById(R.id.settingsButton);
         settingsButton.setOnClickListener(view -> {
@@ -118,14 +118,12 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        ImageButton showMap = findViewById(R.id.mapButton);
-        showMap.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view){
-                Intent intent = new Intent(HomeActivity.this, Map.class);
-                startActivity(intent);
-            }
+        ImageButton mapActivity = findViewById(R.id.mapButton);
+        mapActivity.setOnClickListener(view -> {
+
+            Intent intent= new Intent(this, MapsActivity.class);
+            startActivity(intent);
         });
 
-
-}}
+    }
+}

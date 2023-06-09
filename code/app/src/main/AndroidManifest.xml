@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.papapp"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -16,9 +19,21 @@
         android:theme="@style/Theme.PaPapp"
         tools:replace="android:appComponentFactory"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAyJ0OxFc0nJCB3GwlO0NU9dnrqVd7FRNk" />
+
+        <!-- Map Activity -->
         <activity
-            android:name=".Map"
+            android:name=".MapsActivity"
             android:exported="false" />
+        <activity
+            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            tools:replace="android:theme" />
+
+
         <activity
             android:name=".HomeActivity"
             android:exported="true" />
@@ -43,6 +58,14 @@
         <activity
             android:name=".Settings"
             android:exported="false" />
+        <!-- Library Classes -->
+        <activity
+            android:name=".Library"
+            android:exported="false" />
+        <activity
+            android:name=".ManageAndRate"
+            android:exported="false" />
+        <!-- EndOf Library Classes -->
         <activity
             android:name=".MainActivity"
             android:exported="true">

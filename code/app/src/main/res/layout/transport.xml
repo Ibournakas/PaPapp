@@ -6,7 +6,7 @@
 
 
     <ImageButton
-        android:id="@+id/bus"
+        android:id="@+id/showLibrariesButton"
         android:layout_width="333dp"
         android:layout_height="86dp"
         android:adjustViewBounds="true"
@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/bus" />
 
     <ImageButton
-        android:id="@+id/notification"
+        android:id="@+id/manageRateButton"
         android:layout_width="333dp"
         android:layout_height="86dp"
         android:adjustViewBounds="true"
@@ -34,7 +34,7 @@
         app:srcCompat="@drawable/notification" />
 
     <ImageButton
-        android:id="@+id/stops"
+        android:id="@+id/issueLibraryCardButton"
         android:layout_width="333dp"
         android:layout_height="86dp"
         android:adjustViewBounds="true"
@@ -48,7 +48,7 @@
         app:srcCompat="@drawable/stop" />
 
     <ImageButton
-        android:id="@+id/train"
+        android:id="@+id/find_and_reserve_imgview"
         android:layout_width="333dp"
         android:layout_height="86dp"
         android:adjustViewBounds="true"
@@ -62,7 +62,7 @@
         app:srcCompat="@drawable/train" />
 
     <TextView
-        android:id="@+id/ptannouncements"
+        android:id="@+id/manage_and_rate"
         android:layout_width="227dp"
         android:layout_height="53dp"
         android:text="@string/ptannouncements"
@@ -78,7 +78,7 @@
         app:layout_constraintVertical_bias="0.15" />
 
     <TextView
-        android:id="@+id/coupons"
+        android:id="@+id/issue_library_card"
         android:layout_width="227dp"
         android:layout_height="53dp"
         android:text="@string/stop"
@@ -94,7 +94,7 @@
         app:layout_constraintVertical_bias="0.327" />
 
     <TextView
-        android:id="@+id/busshed"
+        android:id="@+id/show_libraries"
         android:layout_width="227dp"
         android:layout_height="53dp"
         android:text="@string/bussched"
@@ -139,7 +139,7 @@
         app:layout_constraintVertical_bias="0.83" />
 
     <TextView
-        android:id="@+id/trainsched"
+        android:id="@+id/findAndReserveButton"
         android:layout_width="227dp"
         android:layout_height="53dp"
         android:text="@string/trainsched"

@@ -7,7 +7,7 @@
 
     <!-- 1st Button Image -->
     <ImageButton
-        android:id="@+id/notification"
+        android:id="@+id/manageRateButton"
         android:layout_width="333dp"
         android:layout_height="86dp"
         android:adjustViewBounds="true"
@@ -20,8 +20,12 @@
         app:layout_constraintVertical_bias="0.134"
         app:srcCompat="@drawable/rate_book" />
 
+    <!--                                                  -->
+
+    <!-- 2nd Button Image -->
+
     <TextView
-        android:id="@+id/ptannouncements"
+        android:id="@+id/manage_and_rate"
         android:layout_width="227dp"
         android:layout_height="53dp"
         android:text="Manage and rate borrowed textbooks"
@@ -34,13 +38,10 @@
         app:layout_constraintHorizontal_bias="0.641"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15" />
-    <!--                                                  -->
-
-    <!-- 2nd Button Image -->
+        app:layout_constraintVertical_bias="0.148" />
 
     <ImageButton
-        android:id="@+id/stops"
+        android:id="@+id/issueLibraryCardButton"
         android:layout_width="333dp"
         android:layout_height="86dp"
         android:adjustViewBounds="true"
@@ -54,7 +55,7 @@
         app:srcCompat="@drawable/library_card" />
 
     <TextView
-        android:id="@+id/coupons"
+        android:id="@+id/issue_library_card"
         android:layout_width="227dp"
         android:layout_height="53dp"
         android:text="Issue library card"
@@ -73,7 +74,7 @@
     <!-- 3rd Button Image -->
 
     <ImageButton
-        android:id="@+id/bus"
+        android:id="@+id/showLibrariesButton"
         android:layout_width="333dp"
         android:layout_height="86dp"
         android:adjustViewBounds="true"
@@ -87,7 +88,7 @@
         app:srcCompat="@drawable/library_on_map" />
 
     <TextView
-        android:id="@+id/busshed"
+        android:id="@+id/show_libraries"
         android:layout_width="227dp"
         android:layout_height="53dp"
         android:text="Show libraries on map"
@@ -106,7 +107,7 @@
     <!-- 4th Button Image -->
 
     <ImageButton
-        android:id="@+id/train"
+        android:id="@+id/find_and_reserve_imgview"
         android:layout_width="333dp"
         android:layout_height="86dp"
         android:adjustViewBounds="true"
@@ -120,7 +121,7 @@
         app:srcCompat="@drawable/search_book" />
 
     <TextView
-        android:id="@+id/trainsched"
+        android:id="@+id/findAndReserveButton"
         android:layout_width="227dp"
         android:layout_height="53dp"
         android:text="Find and reserve textbook"
