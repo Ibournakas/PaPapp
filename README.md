@@ -10,6 +10,8 @@
 - See today's or this week's menu of the cafeteria.
 - Choose the classes you attend and then view the weekly schedule for the lectures.
 - Interactive map of the university with directions and info for the buildings.
+- Ability to access the University Library and its services (borrow books, issue library card)
+- See public transport stops and schedules for the whole campus
 
 
 
