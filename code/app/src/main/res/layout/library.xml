@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 1st Button Image -->
+    <ImageButton
+        android:id="@+id/notification"
+        android:layout_width="333dp"
+        android:layout_height="86dp"
+        android:adjustViewBounds="true"
+        android:background="@color/design_default_color_secondary"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134"
+        app:srcCompat="@drawable/rate_book" />
+
+    <TextView
+        android:id="@+id/ptannouncements"
+        android:layout_width="227dp"
+        android:layout_height="53dp"
+        android:text="Manage and rate borrowed textbooks"
+        android:textAlignment="center"
+        android:textColor="@color/logo2"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.641"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+    <!--                                                  -->
+
+    <!-- 2nd Button Image -->
+
+    <ImageButton
+        android:id="@+id/stops"
+        android:layout_width="333dp"
+        android:layout_height="86dp"
+        android:adjustViewBounds="true"
+        android:background="@color/darkblue"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.344"
+        app:srcCompat="@drawable/library_card" />
+
+    <TextView
+        android:id="@+id/coupons"
+        android:layout_width="227dp"
+        android:layout_height="53dp"
+        android:text="Issue library card"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.641"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.356" />
+    <!--                                                  -->
+
+    <!-- 3rd Button Image -->
+
+    <ImageButton
+        android:id="@+id/bus"
+        android:layout_width="333dp"
+        android:layout_height="86dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/secondshape"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.548"
+        app:srcCompat="@drawable/library_on_map" />
+
+    <TextView
+        android:id="@+id/busshed"
+        android:layout_width="227dp"
+        android:layout_height="53dp"
+        android:text="Show libraries on map"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.641"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.547" />
+    <!--                                                  -->
+
+    <!-- 4th Button Image -->
+
+    <ImageButton
+        android:id="@+id/train"
+        android:layout_width="333dp"
+        android:layout_height="86dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/reviewsshape"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.744"
+        app:srcCompat="@drawable/search_book" />
+
+    <TextView
+        android:id="@+id/trainsched"
+        android:layout_width="227dp"
+        android:layout_height="53dp"
+        android:text="Find and reserve textbook"
+        android:textAlignment="center"
+        android:textColor="@color/darkblue"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.641"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.73" />
+    <!--                                                  -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

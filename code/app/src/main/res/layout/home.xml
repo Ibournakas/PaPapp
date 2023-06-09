@@ -104,7 +104,7 @@
         app:layout_constraintVertical_bias="0.492" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/libraryButton"
         android:layout_width="185dp"
         android:layout_height="92dp"
         android:adjustViewBounds="true"
@@ -134,7 +134,7 @@
         app:layout_constraintVertical_bias="0.483" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/mapButton"
         android:layout_width="178dp"
         android:layout_height="92dp"
         android:adjustViewBounds="true"

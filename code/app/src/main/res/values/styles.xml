@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <style name="Theme_Dark" >
+    <style name="Theme_Dark">
         <item name="android:colorBackground">#383a3d</item>
         <item name="android:textColor">#f5f5f5</item>
         <item name="colorControlNormal">#f5f5f5</item>
@@ -23,6 +23,21 @@
         <item name="android:textColorPrimary">@color/textColorPrimary</item>
         <item name="android:textColorSecondary">@color/textColorSecondary</item>
         <item name="android:windowBackground">@color/windowBackgroundColor</item>
+    </style>
+
+    <style name="Widget.PaPapp.AppWidget.Container" parent="android:Widget">
+        <item name="android:id">@android:id/background</item>
+        <item name="android:background">?android:attr/colorBackground</item>
+    </style>
+
+    <style name="Widget.PaPapp.AppWidget.InnerView" parent="android:Widget">
+        <item name="android:background">?android:attr/colorBackground</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="Widget.Theme.PaPapp.MyView" parent="">
+        <item name="android:background">@color/gray_400</item>
+        <item name="exampleColor">@color/light_blue_400</item>
     </style>
 
 </resources>

@@ -43,9 +43,12 @@
     <string name="bussched">Bus Schedule</string>
     <string name="trainsched">Train Schedule</string>
     <string-array name="languages">
-            <item>English</item>
-            <item>Greek</item>
-        </string-array>
+        <item>English</item>
+        <item>Greek</item>
+    </string-array>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="app_widget_description">This is an app widget description</string>
 
 
 </resources>
