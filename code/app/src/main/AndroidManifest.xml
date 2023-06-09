@@ -44,6 +44,9 @@
             android:name=".Stops"
             android:exported="true" />
         <activity
+            android:name=".Points"
+            android:exported="true" />
+        <activity
             android:name=".Profile"
             android:exported="true" />
         <activity

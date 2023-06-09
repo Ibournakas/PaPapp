@@ -18,6 +18,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CompoundButton;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Switch;
 import android.widget.Toast;
@@ -152,6 +153,13 @@ public class Settings extends AppCompatActivity {
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
                 finish();
+        });
+
+        Button points = findViewById(R.id.points);
+        points.setOnClickListener(view -> {
+
+            Intent intent= new Intent(this, Points.class);
+            startActivity(intent);
         });
     };
 }

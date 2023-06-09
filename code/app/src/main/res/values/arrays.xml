@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="user_names">
+        <item>Vaggelis</item>
+        <item>Stauroula</item>
+        <item>Malvina</item>
+        <item>Ion</item>
+        <item>User 1</item>
+        <item>User 2</item>
+        <!-- Add more user names as needed -->
+    </array>
+</resources>

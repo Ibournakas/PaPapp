@@ -120,6 +120,7 @@ public class MainActivity extends AppCompatActivity {
                     return;
                 }
                //Toast.makeText(MainActivity.this, sharedPreferences.getString("email", ""), Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this, sharedPreferences.getString("password", ""), Toast.LENGTH_SHORT).show();
 //                Toast.makeText(Profile.this, sharedPreferences.getString("email", ""), Toast.LENGTH_SHORT).show();
                 if(sharedPreferences.getString("email", "").isEmpty() || sharedPreferences.getString("password", "").isEmpty()){
                     SharedPreferences.Editor editor = getSharedPreferences("MyPrefs", MODE_PRIVATE).edit();
