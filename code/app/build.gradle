@@ -47,12 +47,14 @@ dependencies {
     implementation 'org.jsoup:jsoup:1.14.3'
     implementation 'com.squareup.okhttp3:okhttp:4.9.2'
     implementation 'org.apache.pdfbox:pdfbox:2.0.24'
-    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'org.osmdroid:osmdroid-android:6.1.13'
+    implementation 'com.google.android.libraries.places:places:2.4.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+
+
 
     implementation 'com.github.chrisbanes:PhotoView:2.0.0'
-
-
-
 
 }
 

@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <fragment
+        android:id="@+id/mapActivity"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Zoom buttons -->
+    <ImageButton
+        android:id="@+id/zoomOutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zoom_out"
+        android:background="@drawable/button_background"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp" />
+
+    <ImageButton
+        android:id="@+id/zoomInButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zoom_in"
+        android:background="@drawable/button_background"
+        android:layout_above="@id/zoomOutButton"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp" />
+
+    <!-- Search button -->
+    <ImageButton
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search"
+        android:background="@drawable/button_background"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp" />
+
+</RelativeLayout>
