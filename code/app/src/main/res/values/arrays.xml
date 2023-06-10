@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <array name="user_names">
         <item>Vaggelis</item>
@@ -9,4 +8,5 @@
         <item>User 2</item>
         <!-- Add more user names as needed -->
     </array>
+
 </resources>

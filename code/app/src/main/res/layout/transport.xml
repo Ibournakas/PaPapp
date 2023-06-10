@@ -6,7 +6,7 @@
 
 
     <ImageButton
-        android:id="@+id/showLibrariesButton"
+        android:id="@+id/searchOnMapButton"
         android:layout_width="333dp"
         android:layout_height="86dp"
         android:adjustViewBounds="true"
@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/bus" />
 
     <ImageButton
-        android:id="@+id/manageRateButton"
+        android:id="@+id/mapActivityButton"
         android:layout_width="333dp"
         android:layout_height="86dp"
         android:adjustViewBounds="true"
@@ -34,7 +34,7 @@
         app:srcCompat="@drawable/notification" />
 
     <ImageButton
-        android:id="@+id/issueLibraryCardButton"
+        android:id="@+id/bookClassroomButton"
         android:layout_width="333dp"
         android:layout_height="86dp"
         android:adjustViewBounds="true"

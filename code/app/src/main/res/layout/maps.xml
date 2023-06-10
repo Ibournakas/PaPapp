@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 1st Button: Map -->
+    <ImageButton
+        android:id="@+id/mapActivityButton"
+        android:layout_width="333dp"
+        android:layout_height="86dp"
+        android:adjustViewBounds="true"
+        android:background="#4CAF50"
+        android:scaleType="fitStart"
+        android:paddingLeft="9dp"
+        app:layout_constraintBottom_toTopOf="@+id/bookClassroomButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/map_art" />
+
+    <TextView
+        android:id="@+id/manage_and_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Map"
+        android:textAlignment="center"
+        android:textColor="@color/logo2"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/mapActivityButton"
+        app:layout_constraintEnd_toEndOf="@+id/mapActivityButton"
+        app:layout_constraintStart_toStartOf="@+id/mapActivityButton"
+        app:layout_constraintTop_toTopOf="@+id/mapActivityButton"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <!-- 2nd Button: Book Classroom -->
+    <ImageButton
+        android:id="@+id/bookClassroomButton"
+        android:layout_width="333dp"
+        android:layout_height="86dp"
+        android:adjustViewBounds="true"
+        android:background="@color/errorColor"
+        android:scaleType="fitEnd"
+        android:paddingRight="6dp"
+        app:layout_constraintBottom_toTopOf="@+id/searchOnMapButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapActivityButton"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/class_reservation" />
+
+    <TextView
+        android:id="@+id/issue_library_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Classroom"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/bookClassroomButton"
+        app:layout_constraintEnd_toEndOf="@+id/bookClassroomButton"
+        app:layout_constraintStart_toStartOf="@+id/bookClassroomButton"
+        app:layout_constraintTop_toTopOf="@+id/bookClassroomButton"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <!-- 3rd Button: Search on Map -->
+    <ImageButton
+        android:id="@+id/searchOnMapButton"
+        android:layout_width="333dp"
+        android:layout_height="86dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/secondshape"
+        android:scaleType="fitStart"
+        android:paddingLeft="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bookClassroomButton"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/search_map" />
+
+    <TextView
+        android:id="@+id/show_libraries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search on Map"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/searchOnMapButton"
+        app:layout_constraintEnd_toEndOf="@+id/searchOnMapButton"
+        app:layout_constraintStart_toStartOf="@+id/searchOnMapButton"
+        app:layout_constraintTop_toTopOf="@+id/searchOnMapButton"
+        app:layout_constraintVertical_bias="0.5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

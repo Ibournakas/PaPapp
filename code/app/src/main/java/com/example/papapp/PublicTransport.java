@@ -18,7 +18,7 @@ public class PublicTransport extends AppCompatActivity {
             setTheme(R.style.Theme_Light);
         }
         setContentView(R.layout.transport);
-        ImageButton stops = findViewById(R.id.issueLibraryCardButton);
+        ImageButton stops = findViewById(R.id.bookClassroomButton);
         stops.setOnClickListener(view -> {
 
             Intent intent = new Intent( this, Stops.class);

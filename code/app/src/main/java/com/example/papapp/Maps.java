@@ -7,7 +7,7 @@ import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Library extends AppCompatActivity {
+public class Maps extends AppCompatActivity {
     private SharedPreferences sharedPreferences;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,28 +17,29 @@ public class Library extends AppCompatActivity {
         } else {
             setTheme(R.style.Theme_Light);
         }
-        setContentView(R.layout.library);
-        ImageButton manage_and_rate = findViewById(R.id.mapActivityButton);
-        manage_and_rate.setOnClickListener(view -> {
+        setContentView(R.layout.maps);
 
-            Intent intent = new Intent( this, ManageAndRateTextbook.class);
+        ImageButton mapActivity = findViewById(R.id.mapActivityButton);
+        mapActivity.setOnClickListener(view -> {
 
-            startActivity(intent);
-        });
-        ImageButton findReserveTextbook = findViewById(R.id.find_and_reserve_imgview);
-        findReserveTextbook.setOnClickListener(view -> {
-
-            Intent intent = new Intent( this, FindReserveTextbook.class);
-
-            startActivity(intent);
-        });
-        ImageButton librariesMap = findViewById(R.id.searchOnMapButton);
-        librariesMap.setOnClickListener(view -> {
-
-            Intent intent = new Intent( this, ShowLibrariesOnMap.class);
+            Intent intent = new Intent( this, MapsActivity.class);
 
             startActivity(intent);
         });
 
+        ImageButton bookClassroom = findViewById(R.id.bookClassroomButton);
+        bookClassroom.setOnClickListener(view -> {
+
+            Intent intent = new Intent( this, BookClassroom.class);
+
+            startActivity(intent);
+        });
+        ImageButton searchMap = findViewById(R.id.searchOnMapButton);
+        searchMap.setOnClickListener(view -> {
+
+            Intent intent = new Intent( this, SearchOnMap.class);
+
+            startActivity(intent);
+        });
     }
 }

@@ -118,10 +118,10 @@ public class HomeActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        ImageButton mapActivity = findViewById(R.id.mapButton);
-        mapActivity.setOnClickListener(view -> {
+        ImageButton mapsButton = findViewById(R.id.mapButton);
+        mapsButton.setOnClickListener(view -> {
 
-            Intent intent= new Intent(this, MapsActivity.class);
+            Intent intent= new Intent(this, Maps.class);
             startActivity(intent);
         });
 

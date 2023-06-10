@@ -7,7 +7,7 @@
 
     <!-- 1st Button Image -->
     <ImageButton
-        android:id="@+id/manageRateButton"
+        android:id="@+id/mapActivityButton"
         android:layout_width="333dp"
         android:layout_height="86dp"
         android:adjustViewBounds="true"
@@ -41,7 +41,7 @@
         app:layout_constraintVertical_bias="0.148" />
 
     <ImageButton
-        android:id="@+id/issueLibraryCardButton"
+        android:id="@+id/bookClassroomButton"
         android:layout_width="333dp"
         android:layout_height="86dp"
         android:adjustViewBounds="true"
@@ -74,7 +74,7 @@
     <!-- 3rd Button Image -->
 
     <ImageButton
-        android:id="@+id/showLibrariesButton"
+        android:id="@+id/searchOnMapButton"
         android:layout_width="333dp"
         android:layout_height="86dp"
         android:adjustViewBounds="true"

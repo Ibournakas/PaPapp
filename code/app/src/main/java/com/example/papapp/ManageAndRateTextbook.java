@@ -31,7 +31,7 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ManageAndRate extends AppCompatActivity {
+public class ManageAndRateTextbook extends AppCompatActivity {
     private SharedPreferences sharedPreferences;
     private SharedPreferences.Editor editor;
     private List<Book> borrowedBooks;
@@ -129,7 +129,7 @@ public class ManageAndRate extends AppCompatActivity {
 
             ratingPopup.setVisibility(View.GONE);
 
-            Toast.makeText(ManageAndRate.this, "Rating submitted", Toast.LENGTH_SHORT).show();
+            Toast.makeText(ManageAndRateTextbook.this, "Rating submitted", Toast.LENGTH_SHORT).show();
             adapter.notifyDataSetChanged(); // Update the adapter to reflect changes
         });
 

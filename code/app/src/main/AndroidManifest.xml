@@ -20,11 +20,17 @@
         tools:replace="android:appComponentFactory"
         tools:targetApi="31">
 
+
+        <!-- API KEY AT THE VALUE -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAyJ0OxFc0nJCB3GwlO0NU9dnrqVd7FRNk" />
+            android:value="" /> <!-- API KEY HERE -->
 
-        <!-- Map Activity -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="true" />
+
+        <!-- Maps -->
         <activity
             android:name=".MapsActivity"
             android:exported="false" />
@@ -33,18 +39,30 @@
             android:theme="@style/Theme.AppCompat.NoActionBar"
             tools:replace="android:theme" />
 
-
+        <!-- Subcategories of Maps -->
         <activity
-            android:name=".HomeActivity"
+            android:name=".Maps"
             android:exported="true" />
+        <activity
+            android:name=".SearchOnMap"
+            android:exported="false" />
+        <!-- EndOf Map Classes     -->
+
+        <!-- Public Transport -->
         <activity
             android:name=".PublicTransport"
             android:exported="true" />
         <activity
             android:name=".Stops"
             android:exported="true" />
+        <!-- EndOf Public Transport Classes -->
+
+
         <activity
             android:name=".Points"
+            android:exported="true" />
+        <activity
+            android:name=".BookClassroom"
             android:exported="true" />
         <activity
             android:name=".Profile"
@@ -52,6 +70,7 @@
         <activity
             android:name=".AnnouncementActivity"
             android:exported="true" />
+        <!-- Cafeteria Classes -->
         <activity
             android:name=".CafeteriaActivity"
             android:exported="true" />
@@ -59,16 +78,28 @@
             android:name=".CafeMenu"
             android:exported="true" />
         <activity
+            android:name=".BuyVouchers"
+            android:exported="true" />
+        <!-- EndOf Cafeteria Classes -->
+        <activity
             android:name=".Settings"
             android:exported="false" />
+
         <!-- Library Classes -->
         <activity
             android:name=".Library"
             android:exported="false" />
         <activity
-            android:name=".ManageAndRate"
+            android:name=".ManageAndRateTextbook"
+            android:exported="false" />
+        <activity
+            android:name=".FindReserveTextbook"
+            android:exported="true" />
+        <activity
+            android:name=".ShowLibrariesOnMap"
             android:exported="false" />
         <!-- EndOf Library Classes -->
+
         <activity
             android:name=".MainActivity"
             android:exported="true">

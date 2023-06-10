@@ -2,11 +2,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- EditText for searching -->
+    <EditText
+        android:id="@+id/searchEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter classroom name"
+        android:layout_margin="16dp" />
+
     <fragment
         android:id="@+id/mapActivity"
         android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_below="@id/searchEditText" />
+
 
     <!-- Zoom buttons -->
     <ImageButton
@@ -16,9 +26,8 @@
         android:src="@drawable/zoom_out"
         android:background="@drawable/button_background"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="16dp" />
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp" />
 
     <ImageButton
         android:id="@+id/zoomInButton"
@@ -27,8 +36,15 @@
         android:src="@drawable/zoom_in"
         android:background="@drawable/button_background"
         android:layout_above="@id/zoomOutButton"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="4dp" />
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp" />
+
+    <Spinner
+        android:id="@+id/classroomSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="16dp" />
 
 </RelativeLayout>

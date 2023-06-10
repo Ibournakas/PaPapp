@@ -28,8 +28,12 @@ public class CafeteriaActivity extends AppCompatActivity {
             Intent intent= new Intent(this, CafeMenu.class);
             startActivity(intent);
         });
+        ImageButton buyCoupons = findViewById(R.id.coupon);
+        buyCoupons.setOnClickListener(view -> {
 
-
+            Intent intent= new Intent(this, BuyVouchers.class);
+            startActivity(intent);
+        });
 
 
     }
