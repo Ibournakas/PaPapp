@@ -95,7 +95,7 @@
         android:id="@+id/issue_library_card"
         android:layout_width="227dp"
         android:layout_height="53dp"
-        android:text="@string/coupons"
+        android:text="Buy Vouchers"
         android:textAlignment="center"
         android:textColor="@color/dark_100"
         android:textSize="19dp"

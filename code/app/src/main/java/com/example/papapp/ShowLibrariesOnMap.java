@@ -17,7 +17,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-public class Stops extends FragmentActivity implements OnMapReadyCallback {
+public class ShowLibrariesOnMap extends FragmentActivity implements OnMapReadyCallback {
 
     private static final int LOCATION_PERMISSION_REQUEST_CODE = 1;
     private GoogleMap mMap;
@@ -65,33 +65,20 @@ public class Stops extends FragmentActivity implements OnMapReadyCallback {
         } else {
             requestLocationPermission();
         }
-        LatLng BusStop1 = new LatLng(38.286028960247656, 21.78573918256433);
-        mMap.addMarker(new MarkerOptions().position(BusStop1).title("Coffee Island Bus stop"));
+        LatLng uopLibrary = new LatLng(38.289930759335896, 21.79134348313736);
+        mMap.addMarker(new MarkerOptions().position(uopLibrary).title("The main Library of the University of Patras"));
 
-        LatLng BusStop2 = new LatLng(38.285593785215404, 21.786229410141456);
-        mMap.addMarker(new MarkerOptions().position(BusStop2).title("Administration Building - Starting Bus stop"));
+        LatLng medicineLibrary = new LatLng(38.294006363076626, 21.79330686009443);
+        mMap.addMarker(new MarkerOptions().position(medicineLibrary).title("Library of the Medical School"));
 
-        LatLng BusStop3 = new LatLng(38.286214229887875, 21.786109327378323);
-        mMap.addMarker(new MarkerOptions().position(BusStop3).title("Internal 612 Bus stop"));
+        LatLng architectureLibrary = new LatLng(38.286262980192085, 21.784081784272345);
+        mMap.addMarker(new MarkerOptions().position(architectureLibrary).title("Library of the Architecture School"));
 
-        LatLng BusStop4 = new LatLng(38.28791110939085, 21.78664040471753);
-        mMap.addMarker(new MarkerOptions().position(BusStop4).title("Polytechnic Bus stop"));
-
-        LatLng BusStop5 = new LatLng(38.291685702025624, 21.787026482668598);
-        mMap.addMarker(new MarkerOptions().position(BusStop5).title("Physics School Bus stop"));
-
-        LatLng BusStop6 = new LatLng(38.29438500894547, 21.791916708812114);
-        mMap.addMarker(new MarkerOptions().position(BusStop6).title("Medicine School Bus stop"));
-
-        LatLng TrainStop1 = new LatLng(38.28593238733144, 21.786064539157575);
-        mMap.addMarker(new MarkerOptions().position(TrainStop1).title("Initial Train stop"));
-
-        LatLng TrainStop2 = new LatLng(38.28784669921117, 21.78666439408605);
-        mMap.addMarker(new MarkerOptions().position(TrainStop2).title("Polytechnic Train stop"));
-
+        LatLng philosophyLibrary = new LatLng(38.28451457028744, 21.78604511190198);
+        mMap.addMarker(new MarkerOptions().position(philosophyLibrary).title("Library of the Philosophy School"));
 
         // Move the camera to a specific location and set zoom level
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(BusStop2, 15.0f)); // Adjust the zoom level here
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(uopLibrary, 15.0f)); // Adjust the zoom level here
     }
 
     private boolean isLocationPermissionGranted() {
