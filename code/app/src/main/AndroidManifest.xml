@@ -70,6 +70,13 @@
         <activity
             android:name=".AnnouncementActivity"
             android:exported="true" />
+        <activity
+            android:name=".waitTimeDelay"
+            android:exported="true" />
+        <activity
+            android:name=".Train_sched"
+            android:exported="true" />
+
         <!-- Cafeteria Classes -->
         <activity
             android:name=".CafeteriaActivity"

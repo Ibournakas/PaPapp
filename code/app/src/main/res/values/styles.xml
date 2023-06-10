@@ -6,6 +6,12 @@
         <item name="android:textColor">#f5f5f5</item>
         <item name="colorControlNormal">#f5f5f5</item>
         <item name="colorControlActivated">#4CAF50</item>
+        <item name="android:windowBackground">#383a3d</item>
+        <item name="colorSurface">#383a3d</item>
+        <item name="colorOnPrimary">#383a3d</item>
+        <item name="colorOnSurface">#f5f5f5</item>
+
+
     </style>
 
 

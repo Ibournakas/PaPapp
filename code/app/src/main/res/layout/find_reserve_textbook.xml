@@ -23,8 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/book_title"
         android:layout_marginTop="8dp"
-        android:background="@drawable/custom_spinner_background"
-        android:popupBackground="@drawable/custom_spinner_popup_background" />
+ />
 
 
     <LinearLayout
@@ -41,8 +40,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Select"
-            android:textColor="#FFFFFF"
-            android:background="@drawable/button_background"
+
+
             android:padding="12dp"
             android:layout_marginEnd="8dp" />
 
@@ -52,8 +51,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Reserve"
-            android:textColor="#FFFFFF"
-            android:background="@drawable/button_background"
+
             android:padding="12dp" />
 
 

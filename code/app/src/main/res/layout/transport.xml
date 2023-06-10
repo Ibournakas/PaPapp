@@ -6,7 +6,7 @@
 
 
     <ImageButton
-        android:id="@+id/searchOnMapButton"
+        android:id="@+id/bus_sched"
         android:layout_width="333dp"
         android:layout_height="86dp"
         android:adjustViewBounds="true"
@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/bus" />
 
     <ImageButton
-        android:id="@+id/mapActivityButton"
+        android:id="@+id/announcements"
         android:layout_width="333dp"
         android:layout_height="86dp"
         android:adjustViewBounds="true"
@@ -34,7 +34,7 @@
         app:srcCompat="@drawable/notification" />
 
     <ImageButton
-        android:id="@+id/bookClassroomButton"
+        android:id="@+id/show_stops"
         android:layout_width="333dp"
         android:layout_height="86dp"
         android:adjustViewBounds="true"
@@ -48,7 +48,7 @@
         app:srcCompat="@drawable/stop" />
 
     <ImageButton
-        android:id="@+id/find_and_reserve_imgview"
+        android:id="@+id/train_sched"
         android:layout_width="333dp"
         android:layout_height="86dp"
         android:adjustViewBounds="true"

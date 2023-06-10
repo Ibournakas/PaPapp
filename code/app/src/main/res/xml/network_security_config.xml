@@ -4,6 +4,7 @@
         <trust-anchors>
             <certificates src="@raw/certificate" />
             <certificates src="@raw/certificate2"/>
+            <certificates src="@raw/cert"/>
             <certificates src="user"/>
             <certificates src="system"/>
 

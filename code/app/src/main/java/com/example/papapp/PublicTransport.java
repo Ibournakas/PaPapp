@@ -18,12 +18,28 @@ public class PublicTransport extends AppCompatActivity {
             setTheme(R.style.Theme_Light);
         }
         setContentView(R.layout.transport);
-        ImageButton stops = findViewById(R.id.bookClassroomButton);
+        ImageButton stops = findViewById(R.id.show_stops);
         stops.setOnClickListener(view -> {
 
             Intent intent = new Intent( this, Stops.class);
 
             startActivity(intent);
         });
+
+        ImageButton waitTime = findViewById(R.id.waitTime);
+        waitTime.setOnClickListener(view -> {
+
+            Intent intent = new Intent( this, waitTimeDelay.class);
+
+            startActivity(intent);
+        });
+        ImageButton trainsched = findViewById(R.id.train_sched);
+        trainsched.setOnClickListener(view -> {
+
+            Intent intent = new Intent( this, Train_sched.class);
+
+            startActivity(intent);
+        });
+
     }
 }

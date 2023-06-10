@@ -40,12 +40,17 @@ public class ManageAndRateTextbook extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
-        editor = sharedPreferences.edit();
-        setTheme(sharedPreferences.getBoolean("isDarkModeOn", false) ? R.style.Theme_Dark : R.style.Theme_Light);
-        setContentView(R.layout.manage_and_rate);
 
+        sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+        if (sharedPreferences.getBoolean("isDarkModeOn",false)) {
+            setTheme(R.style.Theme_Dark);
+        }
+        else {
+            setTheme(R.style.Theme_Light);
+        }
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.manage_and_rate);
+        editor = sharedPreferences.edit();
         borrowedBooks = new ArrayList<>();
 
         loadBooksFromSharedPreferences();

@@ -22,6 +22,32 @@
     <string name="announcements_error_message">Σφάλμα εύρεσης ανακοινώσεων</string>
     <string name="next_button_text">Φόρτωση περισσότερων</string>
     <string name="cafeteria">Εστία</string>
+    <string name="rationcard">Κάρτα Σίτισης</string>
+    <string name="coupons">Αγορά Κουπονιών</string>
+    <string name="waitingtime">Χρόνος Αναμονής</string>
+    <string name="reviews">Κριτικές</string>
+    <string name="date">Ημερομηνία:</string>
+    <string name="lunch_title">Γεύμα:</string>
+    <string name="first_dish">Πρώτο Πιάτο:</string>
+    <string name="main_course_1">Κύριο Πιάτο 1:</string>
+    <string name="main_course_2">Κύριο Πιάτο 2:</string>
+    <string name="side">Συνοδευτικά:</string>
+    <string name="dinner_title">Δείπνο:</string>
+    <string name="Points">Αποστολή Πόντων</string>
+    <string name="findUser">Εύρεση Χρήστη</string>
+    <string name="Profile">Προφίλ</string>
+    <string name="email">Email:</string>
+    <string name="waitingtimeanddelay">Χρόνος Αναμονής και Καθυστερήσεις</string>
+    <string name="ptannouncements">Ανακοινώσεις Μ.Μ.Μ.</string>
+    <string name="stop">Εμφάνιση Στάσεων</string>
+    <string name="bussched">Πρόγραμμα Λεωφορείων</string>
+    <string name="trainsched">Πρόγραμμα Τρένων</string>
+    <string name="sendpoints">Αποστολή Πόντων:</string>
+    <string name="pointstosend">Πόντοι για Αποστολή:</string>
+    <string name="select_user_prompt">Επιλέξτε έναν Χρήστη</string>
+
+
+
     <string-array name="languages">
 
         <item>English</item>

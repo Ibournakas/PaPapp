@@ -26,11 +26,11 @@ public class BuyVouchers extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
 
-        // Set the theme based on the user's preference
-        if (sharedPreferences.getBoolean("isDarkModeOn", false)) {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-        } else {
-            AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+        if (sharedPreferences.getBoolean("isDarkModeOn",false)) {
+            setTheme(R.style.Theme_Dark);
+        }
+        else {
+            setTheme(R.style.Theme_Light);
         }
 
         setContentView(R.layout.buy_vouchers);
@@ -45,7 +45,7 @@ public class BuyVouchers extends AppCompatActivity {
 
         // Set initial quantity and points
         quantity = 0;
-        points = 20;
+        points = sharedPreferences.getInt("points", 200);
         updateQuantityTextView();
         updatePointsTextView();
 
@@ -82,7 +82,12 @@ public class BuyVouchers extends AppCompatActivity {
         purchaseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Add your purchase logic here
+                Toast.makeText(BuyVouchers.this, "You completed the purchase!", Toast.LENGTH_SHORT).show();
+                points=points- 10*quantity;
+                updatePointsTextView();
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putInt("points", points);
+                editor.apply();
             }
         });
     }
