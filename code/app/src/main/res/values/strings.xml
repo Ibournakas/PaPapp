@@ -45,6 +45,7 @@
     <string name="sendpoints">Send Points to:</string>
     <string name="pointstosend">Points to Send:</string>
     <string name="select_user_prompt">Select a User</string>
+    <string name="app_widget_description" />
     <string-array name="languages">
         <item>English</item>
         <item>Greek</item>

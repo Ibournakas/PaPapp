@@ -24,7 +24,7 @@
         <!-- API KEY AT THE VALUE -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="" /> <!-- API KEY HERE -->
+            android:value="AIzaSyCfk09VQMLNtHyXA_WEZZTO2v_AfOXWEk8" /> <!-- RESTRICTED API KEY HERE -->
 
         <activity
             android:name=".HomeActivity"

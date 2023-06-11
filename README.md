@@ -51,6 +51,12 @@ To see and run the program you need to download the latest Android Studio versio
 - Click on "code" file and when you click "Ok" our project will open on a new window.
 - Finally, you can click play to test our app!
 
+## Enable Google Maps functionality 🗺
+
+This project utilizes the Google Maps in many of its use cases. For them to be accessible, you'll have to make sure that you follow these 2 simple steps:
+- Log in to Google Play with one of your accounts.
+- Make sure that the used device inside the Android Emulator already has the 'Google Play Services for AR' installed and enabled (preferably the latest version).
+
 ## Disclaimer
 
 PaPapp was created as a University Project. As such, it is not a fully functional software product and it's not meant for commercial use.
