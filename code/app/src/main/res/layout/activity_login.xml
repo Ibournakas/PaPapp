@@ -84,7 +84,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="388dp"
         android:textStyle="bold"
-        android:text="@string/username"
+        android:text="@string/email"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/editText1"
         app:layout_constraintHorizontal_bias="0.366"
